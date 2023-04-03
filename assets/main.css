@@ -2604,6 +2604,10 @@ figcaption {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid.wide.halves {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
 .grid.featured {
   margin-top: 40px;
 }
@@ -3759,4 +3763,24 @@ figcaption {
 }
 .italiana {
   font-family: 'Italiana', serif;
+}
+
+.pill {
+  background: #00817f;
+  border-radius: 16px;
+  padding: 2px 16px;
+  color: white;
+}
+
+.ld{
+  color: #0072b1;
+  font-weight: 700;
+}
+.be{
+  color: #053eff;
+  font-weight: 700;
+}
+.db{
+  color: #ea4c89;
+  font-weight: 700;
 }
