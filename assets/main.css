@@ -170,7 +170,7 @@ body {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  background-color: #f7f6f2;
+  background-color: #eef2f5;
 }
 .gradient-text {
   background: linear-gradient(45deg, #05abb0, #03cdac);
@@ -2285,7 +2285,7 @@ figcaption {
 }
 .contact {
   padding: 80px 80px 90px;
-  background-color: #e8e8e8;
+  background-color: #e7ecf0;
 }
 #Contact {
   padding: 0px;
@@ -3607,7 +3607,7 @@ figcaption {
 .navigation {
   position: sticky;
   top: 0;
-  background-color: #f7f6f2;
+  background-color: #eef2f5;
 }
 .shadow {
   box-shadow: 0 3px 6px -6px #aaa;
