@@ -172,26 +172,6 @@ body {
   font-weight: 400;
   background-color: #f7f6f2;
 }
-#particles {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f7f6f2;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  pointer-events: none;
-}
-.overlay {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  /* background: rgb(255,255,255, 0.2);  */
-  pointer-events: none;
-}
 .gradient-text {
   background: linear-gradient(45deg, #05abb0, #03cdac);
   -webkit-background-clip: text;
