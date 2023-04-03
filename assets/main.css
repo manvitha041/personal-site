@@ -196,7 +196,7 @@ body {
   background: linear-gradient(45deg, #05abb0, #03cdac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -1px 1px 3px rgba(0,0,0,0.05);
+  text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.05);
 }
 html.w-mod-touch * {
   background-attachment: scroll !important;
@@ -1960,6 +1960,7 @@ figcaption {
   margin-left: auto;
   padding-right: 60px;
   padding-left: 60px;
+  padding-top: 50px;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -1977,7 +1978,7 @@ figcaption {
   align-items: center;
   padding: 0px;
 }
-.hero .container{
+.hero .container {
   position: relative;
 }
 
