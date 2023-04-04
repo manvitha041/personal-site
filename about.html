@@ -51,22 +51,32 @@
     </a>
     <div class="navigation-items"><a href="https://www.manvitha-konkimalla.com/" aria-current="page"
         class="logo-link w-nav-brand w--current" aria-label="home"><img src="./assets/portfolio-logo@2x.png" width="104"
-          alt="" class="logo-image"></a>
+          alt="portfolio logo" class="logo-image"></a>
       <div class="navigation-wrap">
-        <nav role="navigation" class="navigation-items w-nav-menu"><a href="https://www.manvitha-konkimalla.com/"
-            aria-current="page" class="navigation-item w-nav-link" data-title="Work"
-            data-subtitle="Latest projects">Home</a>
+        <nav role="navigation" class="navigation-items w-nav-menu">
+          <a href="https://www.manvitha-konkimalla.com/" aria-current="page" class="navigation-item w-nav-link"
+            data-title="Work" data-subtitle="Latest projects">Home</a>
           <a href="https://www.manvitha-konkimalla.com/about" class="navigation-item w-nav-link w--current"
             data-title="Hello" data-subtitle="A little bit about me">About</a>
           <a href="#Contact" class="navigation-item w-nav-link">Contact</a>
         </nav>
         <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"
           tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><img
-            src="./assets/menu-icon.png" width="22" alt="" class="menu-icon">
+            src="./assets/menu-icon.png" width="22" alt="portfolio logo" class="menu-icon">
         </div>
       </div>
     </div>
-    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    <div class="w-nav-overlay" style="height: 100vh;">
+      <nav role="navigation" class="navigation-items w-nav-menu" data-nav-menu-open=""
+        style="transform: translateY(0px); transition: transform 400ms ease 0s;">
+        <a href="https://www.manvitha-konkimalla.com/" aria-current="page"
+          class="navigation-item w-nav-link w--nav-link-open" data-title="Work" data-subtitle="Latest projects">Home</a>
+        <a href="https://www.manvitha-konkimalla.com/about"
+          class="navigation-item w-nav-link w--nav-link-open w--current" data-title="Hello"
+          data-subtitle="A little bit about me">About</a>
+        <a href="#Contact" class="navigation-item w-nav-link w--nav-link-open">Contact</a>
+      </nav>
+    </div>
   </nav>
   <section class="section hero">
     <div id="particles" style="  position: absolute;
@@ -81,12 +91,13 @@
     pointer-events: none;"> </div>
     <div class="container">
       <div class="intro-wrap">
-        <div class="heading-jumbo home gradient-text italiana">I enjoy figuring out how to make things work
+        <div class="heading-jumbo home gradient-text italiana" style="text-align: center;">I enjoy figuring out how to
+          make things work
           better.</strong>
         </div>
         <h1 class="name-text"><br>
-          <p style="text-align:center">from <span class="pill">Fashion Designer</span> to <span class="pill">Web
-              Developer</span> to <span class="pill">UI/UX Designer</span></p>
+          <p style="text-align:center;line-height: 36px;">from <span class="pill">Fashion Designer</span> to <span
+              class="pill">Web Developer</span> to <span class="pill">UI/UX Designer</span></p>
           <br>
           As a designer, I care about the details and consider that how things look and work on the screen is
           very important for creating effective, intuitive interfaces. That’s why I use prototyping as my weapon of
@@ -202,7 +213,7 @@
       <a class="be footer-item" href="https://www.behance.net/manvithkonkima" target="_blank">Behance</a>
     </div>
     <div>
-      <a href="./cv" target="_blank" class="cv-link w-inline-block">
+      <a href="./Manvitha-Konkimalla-Resume.pdf" target="_blank" class="cv-link w-inline-block">
         <div class="paragraph-tiny">Open my CV</div>
       </a>
     </div>
@@ -210,151 +221,9 @@
   <div style="text-align: center; padding: 8px;" class="footer-item">
     Copyright© Manvitha Konkimalla 2023
   </div>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script type="text/javascript">
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        var element = document.querySelector(this.getAttribute('href'));
-        var headerOffset = 100;
-        var elementPosition = element.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      });
-    });
-
-    const handleSubmit = (event) => {
-      event.preventDefault();
-
-      const myForm = event.target;
-      const formData = new FormData(myForm);
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => alert("Thank you for your submission! I'll get back to you soon."))
-        .catch((error) => console.log(error));
-    };
-
-    document
-      .querySelector("form")
-      .addEventListener("submit", handleSubmit);
-
-
-
-    particlesJS("particles", {
-      "particles": {
-        "number": {
-          "value": 100,
-          "density": {
-            "enable": false,
-            "value_area": 4498.141557303954
-          }
-        },
-        "color": {
-          "value": "#03cdac"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#03cdac"
-          },
-          "polygon": {
-            "nb_sides": 6
-          },
-        },
-        "opacity": {
-          "value": 0.7,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 3,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#eef2f5",
-          "opacity": 0.05,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 4,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script type="text/javascript" src="./assets/main.js"></script>
 </body>
 
 </html>

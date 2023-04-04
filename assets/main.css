@@ -1514,7 +1514,7 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #c8c8c8;
+  background: #eef2f5;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -1652,6 +1652,9 @@ textarea.w-select {
   display: block;
 }
 @media screen and (max-width: 479px) {
+  canvas {
+    display: none;
+  }
   .w-nav[data-collapse='tiny'] .w-nav-menu {
     display: none;
   }
@@ -3772,15 +3775,15 @@ figcaption {
   color: white;
 }
 
-.ld{
+.ld {
   color: #0072b1;
   font-weight: 700;
 }
-.be{
+.be {
   color: #053eff;
   font-weight: 700;
 }
-.db{
+.db {
   color: #ea4c89;
   font-weight: 700;
 }
