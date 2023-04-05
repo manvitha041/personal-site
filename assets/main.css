@@ -1066,7 +1066,7 @@ figcaption {
   background-size: cover;
   text-align: center;
   text-decoration: none;
-  background-color: #06c2a6;
+  background-color: #04ab92;
   transition: all 0.25 ease-in-out;
 }
 .work-image .title {
@@ -2241,12 +2241,7 @@ figcaption {
   .work-description {
     margin-bottom: 20px;
   }
-  .work-image.cc-work-1,
-  .work-image.cc-work-2,
-  .work-image.cc-work-3,
-  .work-image.cc-work-4,
-  .work-image.cc-work-5,
-  .work-image.cc-work-6 {
+  .work-image{
     height: 240px;
   }
   .contact {
