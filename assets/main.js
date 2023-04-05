@@ -1,56 +1,18 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  const menuBtn = document.querySelector('.menu-button');
-  const overlay = document.querySelector('.w-nav-overlay');
+const menuBtn = document.querySelector('.menu-button');
+const overlay = document.querySelector('.w-nav-overlay');
+const target = document.getElementById('preloader');
 
-  setTimeout(() => {
-    const target = document.getElementById('preloader');
-    target.style.opacity = '0';
-    target.addEventListener('transitionend', () => target.remove());
-  }, 10);
+function loadParticles(scriptUrl) {
+  const script = document.createElement('script');
+  script.src = scriptUrl;
+  script.async = true;
+  script.defer = true;
+  document.body.appendChild(script);
 
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+  script.onload = renderParticles;
+}
 
-      var element = document.querySelector(this.getAttribute('href'));
-      var headerOffset = 100;
-      var elementPosition = element.getBoundingClientRect().top;
-      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    });
-  });
-
-  document.querySelector('form').addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => alert("Thank you for your submission! I'll get back to you soon."))
-      .catch((error) => console.log(error));
-  });
-
-  menuBtn.addEventListener('click', function () {
-    menuBtn.classList.add('w--open');
-    // menu.style.display = 'block';
-    overlay.style.display = 'block';
-  });
-
-  overlay.addEventListener('click', function () {
-    menuBtn.classList.remove('w--open');
-    // menu.style.display = 'none';
-    overlay.style.display = 'none';
-  });
-
+function renderParticles() {
   particlesJS('particles', {
     particles: {
       number: {
@@ -96,7 +58,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       line_linked: {
         enable: true,
         distance: 150,
-        color: '#eef2f5',
+        color: '#F8F8FF',
         opacity: 0.05,
         width: 1,
       },
@@ -156,4 +118,54 @@ window.addEventListener('DOMContentLoaded', (event) => {
     },
     retina_detect: true,
   });
+}
+
+setTimeout(() => {
+  try {
+    target.style.opacity = '0';
+    target.addEventListener('transitionend', () => target.remove());
+  } catch (error) {}
+}, 10);
+
+setTimeout(() => target.remove(), 1500);
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var element = document.querySelector(this.getAttribute('href'));
+    var headerOffset = 100;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  });
 });
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission! I'll get back to you soon."))
+    .catch((error) => console.log(error));
+});
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('w--open');
+  overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+});
+overlay.addEventListener('click', function () {
+  menuBtn.classList.remove('w--open');
+  // menu.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+loadParticles('https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js');

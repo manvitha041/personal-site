@@ -170,7 +170,7 @@ body {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  background-color: #eef2f5;
+  background-color: #F8F8FF;
 }
 .gradient-text {
   background: linear-gradient(45deg, #05abb0, #03cdac);
@@ -557,6 +557,11 @@ textarea.w-select {
   display: none !important;
 }
 @media screen and (max-width: 991px) {
+  .skills {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 0 16px;
+  }
   .w-container {
     max-width: 728px;
   }
@@ -1514,7 +1519,7 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #eef2f5;
+  background: #F8F8FF;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -1717,7 +1722,7 @@ h3 {
   line-height: 46px;
   font-weight: 400;
 }
-h4 {
+h4, .h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -2205,7 +2210,7 @@ figcaption {
   transition: all 0.25 ease-in-out;
 }
 .work-image .title {
-  color: #eef2f5;
+  color: #F8F8FF;
 }
 .work-image:hover {
   opacity: 0.7;
@@ -3619,7 +3624,7 @@ figcaption {
 .navigation {
   position: sticky;
   top: 0;
-  background-color: #eef2f5;
+  background-color: #F8F8FF;
 }
 .shadow {
   box-shadow: 0 3px 6px -6px #aaa;
@@ -3634,7 +3639,7 @@ figcaption {
   z-index: 99999;
   display: flex;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out 2s;
+  transition: opacity 0.3s ease-in-out 1.25s;
 }
 
 #preloader:after,
@@ -3773,6 +3778,7 @@ figcaption {
   border-radius: 16px;
   padding: 2px 16px;
   color: white;
+  white-space: nowrap;
 }
 
 .ld {
