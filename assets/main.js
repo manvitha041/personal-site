@@ -1,9 +1,13 @@
 const menuBtn = document.querySelector('.menu-button');
 const overlay = document.querySelector('.w-nav-overlay');
 const target = document.getElementById('preloader');
-const loadParticles = (scriptUrl) => {
+WebFontConfig = {
+  google: { families: ['Raleway:400,500,700', 'Italiana:400'] }
+};
+
+const loadParticles = (url) => {
   const script = document.createElement('script');
-  script.src = scriptUrl;
+  script.src = url;
   script.async = true;
   script.defer = true;
   document.body.appendChild(script);
@@ -159,5 +163,14 @@ overlay.addEventListener('click', function () {
   overlay.style.display = 'none';
 });
 
-if (window.matchMedia('(max-width: 767px)').matches)
+
+(function(d) {
+  var wf = d.createElement('script'), s = d.scripts[0];
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+  wf.async = true;
+  s.parentNode.insertBefore(wf, s);
+})(document);
+
+
+if (!window.matchMedia('(max-width: 767px)').matches)
   loadParticles('https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js');
