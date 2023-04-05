@@ -4063,6 +4063,9 @@ figcaption {
 }
 
 /* #region overwrites */
+.intro-wrap.about-me p {
+  margin-bottom: 16px;
+}
 body {
   font-family: Raleway, sans-serif;
   background-color: #f8f8ff;
