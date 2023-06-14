@@ -1,0 +1,1859 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+@-ms-viewport {
+  width: device-width;
+}
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+abbr[data-original-title],
+abbr[title] {
+  border-bottom: 0;
+  cursor: help;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+address {
+  font-style: normal;
+  line-height: inherit;
+}
+address,
+dl,
+ol,
+ul {
+  margin-bottom: 1rem;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+blockquote {
+  margin: 0 0 1rem;
+}
+dfn {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: 700;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+a {
+  -webkit-text-decoration-skip: objects;
+  background-color: transparent;
+  text-decoration: none;
+}
+a,
+a:hover {
+  color: #007bff;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+[role="button"],
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+table {
+  border-collapse: collapse;
+}
+caption {
+  caption-side: bottom;
+  color: #868e96;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  text-align: left;
+}
+th {
+  text-align: inherit;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"] {
+  -webkit-appearance: listbox;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+legend {
+  color: inherit;
+  display: block;
+  font-size: 1.5rem;
+  line-height: inherit;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  width: 100%;
+}
+progress {
+  vertical-align: baseline;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: none;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+output {
+  display: inline-block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none !important;
+}
+.ufo--portfolio-page {
+  --bgColor: #fff;
+  background-color: var(--bgColor);
+  overflow-x: clip;
+}
+.ufo--container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 24px;
+  width: 1134px;
+}
+.ufo--page-hero {
+  --hoverColor: #00b8ff;
+  position: relative;
+}
+.ufo--page-hero.ufo-grid {
+  grid-row-gap: 0;
+}
+.ufo--page-hero-content h1 {
+  color: var(--h1Color);
+  font-family: var(--h1Font);
+  font-size: var(--h1Size);
+  font-style: var(--h1Style);
+  font-weight: var(--h1Weight);
+  line-height: var(--h1Height);
+}
+.ufo--page-hero-content h2,
+.ufo--page-hero-content h3 {
+  color: var(--h2Color);
+  font-family: var(--h2Font);
+  font-size: var(--h2Size);
+  font-style: var(--h2Style);
+  font-weight: var(--h2Weight);
+  line-height: var(--h2Height);
+}
+.ufo--page-hero-content ol,
+.ufo--page-hero-content p,
+.ufo--page-hero-content ul {
+  color: var(--p1Color);
+  font-family: var(--p1Font);
+  font-size: var(--p1Size);
+  font-style: var(--p1Style);
+  font-weight: var(--p1Weight);
+  line-height: var(--p1Height);
+  margin-bottom: 0;
+}
+.ufo--page-hero-content p:empty:after {
+  content: "\00A0";
+}
+.ufo--page-hero-content a,
+.ufo--page-hero-content a:hover {
+  color: var(--hoverColor, #00b8ff);
+}
+.ufo--page-hero-content .ufo--page-hero-text.align-text-left * {
+  text-align: left !important;
+}
+.ufo--page-hero-content .ufo--page-hero-text.align-text-center * {
+  text-align: center !important;
+}
+.ufo--page-hero-content .ufo--page-hero-text.align-text-right * {
+  text-align: right !important;
+}
+.ufo--page-navbar {
+  grid-column: 1/-1;
+  height: max-content;
+  position: relative;
+  z-index: 3;
+}
+@media (min-width: 1024px) {
+  .ufo--page-navbar {
+    grid-column: 2 / span 12;
+  }
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+}
+.ufo--page-navbar .ufo--page-navbar-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar .ufo--page-navbar-container:not(.no-mob) {
+    align-items: center;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: -100%;
+    transition: top 0.2s ease-in-out;
+  }
+  .ufo--page-navbar .ufo--page-navbar-container:not(.no-mob).on {
+    top: 0;
+  }
+}
+.ufo--page-hero-content {
+  grid-column-gap: 0;
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .ufo--page-hero-content {
+    grid-column: 2 / span 12;
+  }
+}
+@media (min-width: 640px) {
+  .ufo--page-hero-content {
+    grid-column-gap: var(--gridGap);
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .ufo--page-hero-content.has-picture {
+    grid-template-rows: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .ufo--page-hero-content {
+    height: unset !important;
+  }
+}
+.ufo--page-navbar-id {
+  color: var(--buttonColor);
+  display: none;
+  flex: none;
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  font-style: var(--buttonStyle);
+  font-weight: var(--buttonWeight);
+  line-height: var(--buttonHeight);
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar-id {
+    display: block;
+    position: relative;
+    z-index: 11;
+  }
+}
+.ufo--page-navbar-id:hover {
+  color: var(--hoverColor);
+  font-weight: 700;
+}
+.ufo--page-navbar-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    position: relative;
+    z-index: 11;
+  }
+  .ufo--page-navbar-toggle .close {
+    display: none;
+  }
+  .ufo--page-navbar-toggle.on .close {
+    display: block;
+  }
+  .ufo--page-navbar-toggle.on .open {
+    display: none;
+  }
+}
+.ufo--page-navbar-item {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+  position: relative;
+}
+.ufo--page-navbar-item:after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  font-style: var(--buttonStyle);
+  font-weight: 700;
+  height: 0;
+  line-height: var(--buttonHeight);
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  visibility: hidden;
+}
+@media speech {
+  .ufo--page-navbar-item:after {
+    display: none;
+  }
+}
+.ufo--page-navbar-item .btn {
+  background-color: transparent;
+  border: none;
+  color: var(--buttonColor);
+  cursor: pointer;
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  font-style: var(--buttonStyle);
+  font-weight: var(--buttonWeight);
+  height: auto;
+  line-height: var(--buttonHeight);
+  padding: 0;
+  text-transform: none;
+  white-space: normal;
+}
+.ufo--page-navbar-item .btn:not(.editable):active,
+.ufo--page-navbar-item .btn:not(.editable):focus,
+.ufo--page-navbar-item .btn:not(.editable):hover {
+  border-color: var(--hoverColor);
+  color: var(--hoverColor);
+  font-weight: 700;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar-item {
+    margin: 12px 0;
+  }
+}
+.ufo--page-navbar-logo {
+  align-self: center;
+  height: max-content;
+  margin-right: 60px;
+}
+@media (max-width: 768px) {
+  .ufo--page-navbar-logo {
+    position: relative;
+    z-index: 11;
+  }
+}
+.ufo--page-navbar-logo img {
+  max-width: 256px;
+  object-fit: contain;
+}
+.ufo--page-hero-image {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 12;
+  grid-row: 2;
+  justify-content: center;
+  padding-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+.ufo--page-hero-image.empty .empty-state {
+  background-color: #e8ecee;
+}
+.ufo--page-hero-image.cover,
+.ufo--page-hero-image.fit,
+.ufo--page-hero-image.fit-margin {
+  padding-bottom: 0;
+}
+.ufo--page-hero-image.cover img.hero-image,
+.ufo--page-hero-image.fit img.hero-image,
+.ufo--page-hero-image.fit-margin img.hero-image {
+  display: block;
+  height: 100% !important;
+  max-height: unset !important;
+  object-fit: cover;
+  width: 100% !important;
+}
+.ufo--page-hero-image.fit-margin {
+  margin-bottom: 48px;
+}
+.ufo--page-hero-image.cover {
+  margin-left: -24px;
+  margin-right: -24px;
+  width: 100vw;
+}
+.ufo--page-hero-image.cover img.hero-image {
+  object-fit: contain;
+}
+.ufo--page-hero-image.fit,
+.ufo--page-hero-image.fit-margin {
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .ufo--page-hero-image {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    padding-bottom: 0;
+  }
+  .ufo--page-hero-image.flipped {
+    grid-column: 7 / span 6;
+  }
+  .ufo--page-hero-image.fit img.hero-image {
+    object-fit: contain;
+  }
+  .ufo--page-hero-image.fit-margin {
+    margin: 48px;
+  }
+  .ufo--page-hero-image.fit-margin img.hero-image {
+    object-fit: contain;
+  }
+  .ufo--page-hero-image.cover {
+    height: 100%;
+    margin: 0;
+    overflow: unset;
+    position: relative;
+    width: unset;
+  }
+  .ufo--page-hero-image.cover img.hero-image {
+    max-width: 50vw !important;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    width: 50vw !important;
+  }
+  .ufo--page-hero-image.cover.flipped img.hero-image {
+    left: 0;
+  }
+}
+.ufo--page-hero-bio {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 12;
+  grid-row: 1;
+  justify-content: center;
+  padding: 48px 0;
+  position: relative;
+  z-index: 1;
+}
+.ufo--page-hero-bio.view {
+  word-wrap: break-word;
+  white-space: break-spaces;
+}
+@media (min-width: 768.5px) {
+  .ufo--page-hero-bio {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+  }
+  .ufo--page-hero-bio.flipped {
+    grid-column: 1 / span 6;
+  }
+}
+.ufo--page-hero-bio.full-w {
+  grid-column: 1 / span 12;
+  text-align: center;
+}
+.ufo--page-hero-bio.top {
+  justify-content: flex-start;
+}
+.ufo--page-hero-bio.bottom,
+.ufo--page-links {
+  justify-content: flex-end;
+}
+.ufo--page-links {
+  grid-column: 1 / span 12;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .ufo--page-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 48px 0 0;
+  }
+}
+.ufo--page-links a {
+  align-items: center;
+  color: var(--buttonColor);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  font-style: var(--buttonStyle);
+  font-weight: var(--buttonWeight);
+  justify-content: space-between;
+  line-height: var(--buttonHeight);
+  margin-left: 24px;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .ufo--page-links a {
+    margin: 12px 0;
+  }
+}
+.ufo--page-links a:after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  font-style: var(--buttonStyle);
+  font-weight: 700;
+  height: 0;
+  line-height: var(--buttonHeight);
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  visibility: hidden;
+}
+@media speech {
+  .ufo--page-links a:after {
+    display: none;
+  }
+}
+.ufo--page-links a:first-child {
+  margin-left: 0 !important;
+}
+.ufo--page-links a:last-child {
+  margin-right: 0 !important;
+}
+.ufo--page-links a:hover {
+  color: var(--hoverColor);
+}
+.ufo--page-links a .fa-website:before {
+  content: "\f0ac";
+}
+.ufo--page-links a .fa {
+  text-align: center;
+}
+.ufo--page-links a .fa-email:before {
+  content: "\f0e0";
+  line-height: 20px;
+}
+.ufo--page-hero-background {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: absolute;
+  right: 50%;
+  width: 100vw;
+}
+@media (min-width: 768.5px) {
+  .ufo--page-hero-background {
+    grid-row: 1;
+  }
+}
+.ufo--page-hero-background.overlay:before {
+  background-color: var(--colorOverlay);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.ufo--page-hero-background.blur:before {
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.profile-footer {
+  background-color: var(--bgColor);
+  min-height: 100px;
+  width: 100%;
+}
+.profile-footer-content {
+  --borderColor: hsla(0, 0%, 53%, 0.3);
+  align-items: center;
+  border-top: 1px solid var(--borderColor);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-column: 1/-1;
+  justify-content: center;
+  padding: var(--gridGap) 0;
+}
+@media (min-width: 1024px) {
+  .profile-footer-content {
+    grid-column: 2 / span 12;
+  }
+}
+.profile-footer-content .footer-url {
+  color: var(--buttonColor);
+  cursor: pointer;
+  font-family: var(--buttonFont);
+  font-size: var(--buttonSize);
+  line-height: 1.2;
+  margin: 0 10px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-out;
+}
+.profile-footer-content .footer-url:hover {
+  color: var(--hoverColor);
+}
+.profile-footer-content .footer-icon {
+  border-radius: 50%;
+  font-size: 14px;
+  overflow: hidden;
+}
+.profile-footer-content .footer-icon:last-child {
+  margin-right: 0;
+}
+.profile-footer-content .footer-icon .fa-website:before {
+  content: "\f0ac";
+}
+.profile-footer-content .footer-icon .fa {
+  line-height: 22px;
+  text-align: center;
+}
+.profile-footer-content .footer-icon .fa-email:before {
+  content: "\f0e0";
+  line-height: 20px;
+}
+.theme_eleven {
+  --borderColor: #282a2b33;
+}
+.theme_eleven .ufo--page-navbar {
+  display: flex;
+}
+@media (min-width: 768.5px) {
+  .theme_eleven .ufo--page-navbar {
+    flex-direction: row;
+    justify-content: center;
+    padding: 36px 0;
+  }
+  .theme_eleven .ufo--page-navbar .ufo--page-navbar-container {
+    width: max-content;
+  }
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item {
+  margin-right: 100px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .theme_eleven .ufo--page-navbar .ufo--page-navbar-item {
+    margin: 12px 0;
+  }
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item:before {
+  background-color: var(--buttonColor);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.1s ease-in-out;
+  width: 0;
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item.selected:before,
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item:hover:before {
+  width: 100%;
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item .btn {
+  padding-bottom: 6px;
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item .btn.active {
+  font-weight: 700;
+}
+.theme_eleven .ufo--page-navbar .ufo--page-navbar-item:last-child {
+  margin-right: 0;
+}
+.theme_eleven .ufo--page-hero-image.theme-default img.hero-image {
+  height: calc(100% - 96px);
+  margin: 48px 0;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+.theme_eleven .ufo--page-hero-image img.hero-image {
+  height: 360px;
+  margin: auto;
+  max-height: calc(100vw - 48px);
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 460px;
+}
+.theme_eleven .ufo--page-hero-image img.hero-image.empty-state {
+  object-fit: contain;
+}
+.theme_eleven .profile-footer-content {
+  border: none;
+}
+.theme_eleven .profile-footer-content .footer-url {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .theme_eleven.ufo--site-nav {
+    justify-content: center;
+  }
+}
+.ufo--user-projects .project {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.ufo--user-projects .project.add-project {
+  overflow: inherit;
+}
+.ufo--user-projects .project:hover .image-container img.project-thumbnail {
+  filter: blur(10px);
+  transform: scale(1.03);
+}
+.ufo--user-projects .project:hover .project-name {
+  background: rgba(40, 42, 43, 0.75);
+  opacity: 1;
+}
+.ufo--user-projects .project .image-container {
+  display: flex;
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.ufo--user-projects .project .image-container.overlay:after {
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  background-color: var(--colorOverlay);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ufo--user-projects .project img.project-thumbnail {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition: 0.2s ease;
+  transition-property: transform, filter;
+  width: 100%;
+}
+.ufo--user-projects .project .project-name {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: opacity 0.2s ease-out;
+  width: 100%;
+  z-index: 2;
+}
+.ufo--user-projects .project .project-name .project-title {
+  color: var(--projectTitleColor);
+  font-family: var(--projectTitleFont);
+  font-size: var(--projectTitleSize);
+  font-style: var(--projectTitleStyle);
+  font-weight: var(--projectTitleWeight);
+  line-height: var(--projectTitleHeight);
+  margin-bottom: 16px;
+}
+.ufo--user-projects .project .project-name .project-subtitle {
+  color: var(--projectSubTitleColor);
+  font-family: var(--projectSubTitleFont);
+  font-size: var(--projectSubTitleSize);
+  font-style: var(--projectSubTitleStyle);
+  font-weight: var(--projectSubTitleWeight);
+  line-height: var(--projectSubTitleHeight);
+}
+.ufo--user-projects .project.ghost {
+  background: #edf0f1;
+  height: 100%;
+}
+.ufo--user-projects .project.ghost .image-container,
+.ufo--user-projects .project.ghost .project-layer,
+.ufo--user-projects .project.ghost .project-status-display,
+.ufo--user-projects .project.ghost .project-subtitle,
+.ufo--user-projects .project.ghost .project-title {
+  opacity: 0 !important;
+}
+.ufo--user-projects .project.dragon {
+  cursor: move;
+  cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ufo--user-projects .project.dragon .project-subtitle,
+.ufo--user-projects .project.dragon .project-title {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ufo--user-projects .project.ufo--trickacity {
+  z-index: 1;
+}
+.ufo--user-projects .project.ufo--trickacity .image-container img {
+  z-index: -1;
+}
+.flip-list-move {
+  transition: transform 0.5s;
+}
+.empty-collection {
+  grid-column: 1/-1;
+}
+@media (min-width: 1024px) {
+  .empty-collection {
+    grid-column: 2 / span 12;
+  }
+}
+@keyframes jiggle {
+  0% {
+    transform: rotate(-0.5deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+}
+.ufo--user-projects .project.layout-is--small-block-slided {
+  grid-row: span 3;
+}
+.ufo--user-projects .project.layout-is--small-block-slided:nth-child(2) {
+  grid-row: 2 / span 3;
+}
+.ufo--user-projects .project.layout-is--large-block-mixed:not(:first-child) {
+  display: grid;
+  grid-column: 2 / span 6;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child)
+  .ufo--project-title-container {
+  max-width: 100% !important;
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child).title-is--below
+  .project-name {
+  grid-row: 2;
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child).title-is--below
+  .image-container,
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child).title-is--below
+  .project-layer {
+  grid-row: 1;
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child).title-is--on-thumbnail
+  .project-name {
+  padding: var(--gridGap);
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child)
+  .image-container {
+  padding-top: 100%;
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child)
+  .image-container,
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child)
+  .project-layer,
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child)
+  .project-name {
+  grid-column: 1 / span 12;
+}
+.ufo--user-projects
+  .project.layout-is--large-block-mixed:not(:first-child):nth-child(odd) {
+  grid-column-start: 8;
+}
+.ufo--user-projects .project.thumbnail-is--default,
+.ufo--user-projects .project.thumbnail-is--small {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--default,
+  .ufo--user-projects .project.thumbnail-is--small {
+    grid-column: 2 / span 6;
+  }
+  .ufo--user-projects .project.thumbnail-is--default:nth-child(2n),
+  .ufo--user-projects .project.thumbnail-is--small:nth-child(2n) {
+    grid-column-start: 8;
+  }
+}
+.ufo--user-projects .project.thumbnail-is--default .image-container,
+.ufo--user-projects .project.thumbnail-is--default .project-layer,
+.ufo--user-projects .project.thumbnail-is--default .project-name,
+.ufo--user-projects .project.thumbnail-is--small .image-container,
+.ufo--user-projects .project.thumbnail-is--small .project-layer,
+.ufo--user-projects .project.thumbnail-is--small .project-name {
+  grid-column: 1 / span 12;
+}
+.ufo--user-projects
+  .project.thumbnail-is--default
+  .project-name
+  .ufo--project-title-container,
+.ufo--user-projects
+  .project.thumbnail-is--small
+  .project-name
+  .ufo--project-title-container {
+  width: 100%;
+}
+.ufo--user-projects .project.thumbnail-is--default .project-name .project-title,
+.ufo--user-projects .project.thumbnail-is--small .project-name .project-title {
+  margin-bottom: 24px;
+}
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--below
+  .project-name,
+.ufo--user-projects .project.thumbnail-is--small.title-is--below .project-name {
+  grid-row: 2;
+}
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--below
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--below
+  .project-layer,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--below
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--below
+  .project-layer {
+  grid-row: 1;
+}
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--on-thumbnail
+  .project-name,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--on-thumbnail
+  .project-name {
+  padding: var(--gridGap);
+}
+.ufo--user-projects .project.thumbnail-is--default.title-is--alternating,
+.ufo--user-projects .project.thumbnail-is--default.title-is--left,
+.ufo--user-projects .project.thumbnail-is--default.title-is--right,
+.ufo--user-projects .project.thumbnail-is--small.title-is--alternating,
+.ufo--user-projects .project.thumbnail-is--small.title-is--left,
+.ufo--user-projects .project.thumbnail-is--small.title-is--right {
+  grid-gap: var(--gridGap);
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--default.title-is--alternating,
+  .ufo--user-projects .project.thumbnail-is--default.title-is--left,
+  .ufo--user-projects .project.thumbnail-is--default.title-is--right,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--alternating,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--left,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--right {
+    grid-column: 2 / span 12;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(2n)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(odd)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(odd)
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--left
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--right
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--right
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(2n)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(odd)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(odd)
+    .project-layer,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--left .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-layer {
+    grid-column: 1 / span 6;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(2n)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(2n)
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--alternating:nth-child(odd)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--left
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--default.title-is--right
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(2n)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(2n)
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating:nth-child(odd)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-name {
+    grid-column: 7 / span 6;
+  }
+}
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--alternating
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--left
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--right
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--alternating
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--left
+  .image-container,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--right
+  .image-container {
+  padding-top: 50%;
+}
+.ufo--user-projects
+  .project.thumbnail-is--default.title-is--alternating.add-project,
+.ufo--user-projects .project.thumbnail-is--default.title-is--left.add-project,
+.ufo--user-projects .project.thumbnail-is--default.title-is--right.add-project,
+.ufo--user-projects
+  .project.thumbnail-is--small.title-is--alternating.add-project,
+.ufo--user-projects .project.thumbnail-is--small.title-is--left.add-project,
+.ufo--user-projects .project.thumbnail-is--small.title-is--right.add-project {
+  padding-top: 50% !important;
+}
+.ufo--user-projects .project.thumbnail-is--medium {
+  grid-gap: var(--gridGap);
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--medium {
+    grid-column: 2 / span 12;
+  }
+}
+.ufo--user-projects .project.thumbnail-is--medium .project-name {
+  grid-column: 1/-1;
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--medium .project-name {
+    grid-column: 8 / span 5;
+  }
+}
+.ufo--user-projects
+  .project.thumbnail-is--medium
+  .project-name
+  .ufo--project-title-container {
+  width: 100%;
+}
+.ufo--user-projects .project.thumbnail-is--medium .project-name .project-title {
+  margin-bottom: 24px;
+}
+.ufo--user-projects .project.thumbnail-is--medium .image-container,
+.ufo--user-projects .project.thumbnail-is--medium .project-layer {
+  grid-column: 1/-1;
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--medium .image-container,
+  .ufo--user-projects .project.thumbnail-is--medium .project-layer {
+    grid-column: 1 / span 7;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(2n)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .project-name {
+    grid-column: 1 / span 5;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(odd)
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .project-name {
+    grid-column: 8 / span 5;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(2n)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(2n)
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .project-layer {
+    grid-column: 6 / span 7;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(odd)
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating:nth-child(odd)
+    .project-layer,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .project-layer {
+    grid-column: 1 / span 7;
+  }
+}
+.ufo--user-projects .project.thumbnail-is--medium.add-project {
+  padding-top: 50% !important;
+  width: 57% !important;
+}
+.ufo--user-projects .project.thumbnail-is--large {
+  grid-column: 1/-1;
+}
+@media (min-width: 1024px) {
+  .ufo--user-projects .project.thumbnail-is--large {
+    grid-column: 2 / span 12;
+  }
+}
+.ufo--user-projects .project.thumbnail-is--large .project-name {
+  padding: var(--gridGap);
+}
+.ufo--user-projects
+  .project.thumbnail-is--large
+  .project-name
+  .ufo--project-title-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .ufo--user-projects
+    .project.thumbnail-is--large
+    .project-name
+    .ufo--project-title-container {
+    max-width: 75%;
+  }
+}
+@media (min-width: 1280px) {
+  .ufo--user-projects
+    .project.thumbnail-is--large
+    .project-name
+    .ufo--project-title-container {
+    max-width: 50%;
+  }
+}
+.ufo--user-projects .project.thumbnail-is--large .project-name .project-title {
+  margin-bottom: 16px;
+}
+.ufo--user-projects .project.thumbnail-is--large .image-container {
+  padding-top: 50%;
+}
+.ufo--user-projects .project.thumbnail-is--large .project-layer,
+.ufo--user-projects .project.thumbnail-is--large.add-project {
+  padding-top: 50% !important;
+}
+.ufo--user-projects
+  .project.title-is--default:hover:not(.title-is--visible)
+  .project-name {
+  background-color: rgba(40, 42, 43, 0.75);
+}
+.ufo--user-projects .project.title-is--visible .project-name {
+  background-color: transparent;
+  opacity: 1;
+}
+.ufo--user-projects .project.title-is--visible:hover .image-container {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.ufo--user-projects .project.title-is--visible:hover .image-container img {
+  filter: none;
+}
+.ufo--user-projects .project.title-is--hidden .project-name {
+  display: none;
+  visibility: hidden;
+}
+.ufo--user-projects .project.title-is--hidden:hover .image-container {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.ufo--user-projects .project.title-is--hidden:hover .image-container img {
+  filter: none;
+}
+.ufo--user-projects .project.title-is--below {
+  flex-flow: column-reverse;
+  grid-template-rows: max-content;
+  justify-content: flex-end;
+}
+.ufo--user-projects .project.title-is--below .project-name {
+  margin-bottom: 10px;
+  padding: 22px 0 0;
+}
+.ufo--user-projects .project.title-is--below .image-container {
+  height: 50%;
+}
+.ufo--user-projects .project.title-is--above {
+  grid-template-rows: 1fr auto;
+}
+.ufo--user-projects .project.title-is--above .project-name {
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 0 22px;
+}
+.ufo--user-projects .project.title-is--above .image-container {
+  height: 50%;
+}
+.ufo--user-projects .project.title-is--above.add-project {
+  align-self: flex-end;
+}
+.ufo--user-projects .project.title-is--above .project-layer {
+  bottom: 0;
+  top: inherit;
+}
+.ufo--user-projects .project.title-is--above,
+.ufo--user-projects .project.title-is--below {
+  overflow: inherit;
+}
+.ufo--user-projects .project.title-is--above .project-name,
+.ufo--user-projects .project.title-is--below .project-name {
+  height: auto;
+  justify-content: flex-start;
+  position: relative;
+  width: auto;
+}
+.ufo--user-projects .project.title-is--above .project-name .project-title,
+.ufo--user-projects .project.title-is--below .project-name .project-title {
+  margin-bottom: 7px;
+}
+.ufo--user-projects .project.title-is--above .image-container,
+.ufo--user-projects .project.title-is--below .image-container {
+  transition: box-shadow 0.2s ease-out;
+}
+.ufo--user-projects .project.title-is--above:hover .image-container,
+.ufo--user-projects .project.title-is--below:hover .image-container {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.ufo--user-projects .project.title-is--above:hover .image-container img,
+.ufo--user-projects .project.title-is--below:hover .image-container img {
+  filter: none;
+  transform: scale(1.03);
+}
+.ufo--user-projects .project.title-is--above .project-layer,
+.ufo--user-projects .project.title-is--above.add-project,
+.ufo--user-projects .project.title-is--below .project-layer,
+.ufo--user-projects .project.title-is--below.add-project {
+  height: 50%;
+  padding-top: 100%;
+}
+.ufo--user-projects .project.title-is--above.add-project .add-project-content,
+.ufo--user-projects .project.title-is--below.add-project .add-project-content {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.ufo--user-projects .project.title-is--alternating:hover .project-name,
+.ufo--user-projects .project.title-is--left:hover .project-name,
+.ufo--user-projects .project.title-is--right:hover .project-name {
+  background: transparent;
+}
+.ufo--user-projects
+  .project.title-is--alternating.thumbnail-is--large
+  .project-name,
+.ufo--user-projects .project.title-is--left.thumbnail-is--large .project-name,
+.ufo--user-projects .project.title-is--right.thumbnail-is--large .project-name {
+  padding: 80px;
+}
+.ufo--user-projects .project.title-is--left .project-name {
+  left: 0;
+  padding-left: 0;
+}
+.ufo--user-projects .project.title-is--left .image-container {
+  align-self: flex-end;
+}
+.ufo--user-projects .project.title-is--left .project-layer {
+  left: auto;
+  right: 0;
+}
+.ufo--user-projects .project.title-is--right .project-name {
+  left: auto;
+  padding-right: 0;
+  right: 0;
+}
+.ufo--user-projects
+  .project.title-is--alternating:nth-child(odd)
+  .image-container,
+.ufo--user-projects .project.title-is--right .image-container {
+  align-self: flex-start;
+}
+.ufo--user-projects
+  .project.title-is--alternating:nth-child(2n)
+  .image-container {
+  align-self: flex-end;
+}
+.ufo--user-projects .project.title-is--dark.title-is--hover .project-name,
+.ufo--user-projects
+  .project.title-is--dark:not(.title-is--visible)
+  .project-name {
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+.ufo--user-projects .project.title-is--light.title-is--hover .project-name {
+  background-color: rgba(40, 42, 43, 0.75);
+}
+.ufo--user-projects .project.title-align--top .project-name {
+  justify-content: flex-start;
+}
+.ufo--user-projects
+  .project.title-align--top.thumbnail-is--medium
+  .project-name,
+.ufo--user-projects
+  .project.title-align--top.title-is--alternating
+  .project-name,
+.ufo--user-projects .project.title-align--top.title-is--left .project-name,
+.ufo--user-projects .project.title-align--top.title-is--right .project-name {
+  padding-top: 0;
+}
+.ufo--user-projects
+  .project.title-align--top.thumbnail-is--large
+  .project-name {
+  padding: 80px;
+}
+.ufo--user-projects .project.title-align--bottom .project-name {
+  justify-content: flex-end;
+}
+.ufo--user-projects
+  .project.title-align--bottom.thumbnail-is--medium
+  .project-name,
+.ufo--user-projects
+  .project.title-align--bottom.title-is--alternating
+  .project-name,
+.ufo--user-projects .project.title-align--bottom.title-is--left .project-name,
+.ufo--user-projects .project.title-align--bottom.title-is--right .project-name {
+  padding-bottom: 0;
+}
+.ufo--user-projects
+  .project.title-align--bottom.thumbnail-is--large
+  .project-name {
+  padding: 80px;
+}
+.ufo--user-projects .project.title-justify--left .project-name {
+  align-items: flex-start;
+  text-align: left;
+}
+.ufo--user-projects .project.title-justify--right .project-name {
+  align-items: flex-end;
+  text-align: right;
+}
+.default-template
+  .ufo--user-projects
+  .project.add-project
+  .add-project-content {
+  padding: 0 45px;
+}
+@media (max-width: 1024px) and (orientation: landscape),
+  (max-width: 991px),
+  (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .ufo--user-projects .project .image-container {
+    height: auto;
+  }
+  .ufo--user-projects
+    .project:not(.title-is--below):not(.title-is--above)
+    .project-name {
+    background-color: transparent !important;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 1;
+    order: 2;
+    padding: 22px 0 0;
+    position: relative;
+    width: auto;
+  }
+  .ufo--user-projects
+    .project:not(.title-is--below):not(.title-is--above)
+    .project-name
+    .project-title {
+    color: var(--h2Color);
+    max-width: 100%;
+  }
+  .ufo--user-projects
+    .project:not(.title-is--below):not(.title-is--above)
+    .project-name
+    .project-subtitle {
+    color: var(--p1Color);
+    max-width: 100%;
+  }
+  .ufo--user-projects .project:not(.title-is--below) .project-name {
+    margin-bottom: 0;
+    padding: 22px 0;
+  }
+  .ufo--user-projects .project.title-is--above,
+  .ufo--user-projects .project.title-is--below {
+    margin-bottom: 0;
+  }
+  .ufo--user-projects .project.title-is--above .project-name,
+  .ufo--user-projects .project.title-is--below .project-name {
+    order: 0;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-name
+    .project-title {
+    color: var(--projectTitleColor);
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-name
+    .project-subtitle {
+    color: var(--projectSubTitleColor);
+  }
+  .ufo--user-projects .project.thumbnail-is--medium,
+  .ufo--user-projects .project.thumbnail-is--medium .project-name,
+  .ufo--user-projects .project.title-is--alternating,
+  .ufo--user-projects .project.title-is--alternating .project-name {
+    margin-bottom: 0;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium
+    .project-name
+    .project-title,
+  .ufo--user-projects
+    .project.title-is--alternating
+    .project-name
+    .project-title {
+    --projectTitleSize: 24px;
+    --projectTitleHeight: 27px;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium
+    .project-name
+    .project-subtitle,
+  .ufo--user-projects
+    .project.title-is--alternating
+    .project-name
+    .project-subtitle {
+    --projectSubTitleSize: 16px;
+    --projectSubTitleHeight: 19px;
+  }
+  .ufo--user-projects .project.thumbnail-is--medium .image-container,
+  .ufo--user-projects .project.title-is--alternating .image-container {
+    padding-top: 86%;
+    width: 100%;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .image-container {
+    padding-top: 100%;
+    width: 100%;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .project-name,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--left .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-name {
+    width: 100%;
+  }
+  .profile_theme_nine
+    .ufo--user-projects
+    .project:not(.title-is--below):not(.title-is--above)
+    .project-name
+    .project-title {
+    --projectTitleColor: #282a2b;
+  }
+  .profile_theme_nine
+    .ufo--user-projects
+    .project:not(.title-is--below):not(.title-is--above)
+    .project-name
+    .project-subtitle {
+    --projectSubTitleColor: #282a2b;
+  }
+}
+@media (min-width: 1025px) {
+  .profile-page .profile_theme_one.ufo--user-projects {
+    padding-top: 0;
+  }
+  .ufo--user-projects .project.title-is--below .project-name {
+    margin-bottom: 20px;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .image-container {
+    padding-top: 100%;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--alternating
+    .project-name,
+  .ufo--user-projects .project.thumbnail-is--small.title-is--left .project-name,
+  .ufo--user-projects
+    .project.thumbnail-is--small.title-is--right
+    .project-name {
+    height: 100%;
+    position: absolute;
+  }
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--alternating
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--left
+    .image-container,
+  .ufo--user-projects
+    .project.thumbnail-is--medium.title-is--right
+    .image-container {
+    padding-top: 87.5%;
+  }
+}
+@media (max-width: 1024px) {
+  .ufo--user-projects .project .project-name .project-title,
+  .ufo--user-projects
+    .project.thumbnail-is--large
+    .project-name
+    .project-title {
+    margin-bottom: 7px;
+  }
+}
+.empty-collection .empty-illustration {
+  background: url(https://uxfol.io/dist/src/assets/images/empty-collection..png)
+    50% no-repeat;
+  background-size: contain;
+  height: 406px;
+  margin: 20px auto;
+  max-width: 100%;
+  width: 410px;
+}
+.empty-collection .centered-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.empty-collection .title {
+  font-size: 1.4rem;
+  font-style: unset;
+  font-weight: 700;
+  line-height: 0.91;
+  margin-bottom: 10px;
+}
+.empty-collection .subtitle,
+.empty-collection .title {
+  color: #6b797f;
+  font-family: Source Sans Pro, sans-serif;
+  text-align: center;
+}
+.empty-collection .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.empty-collection .subtitle a {
+  color: #00b8ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.empty-collection .subtitle a:hover {
+  text-decoration: none;
+}
+.empty-collection .btn {
+  background-color: #00b8ff;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  height: 36px;
+  line-height: 1.5;
+  padding: 8px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
