@@ -4899,7 +4899,7 @@ body {
     grid-column: 4 / span 8;
   }
   .ufo-sec .ufo-sec--content.align-box-left {
-    grid-column: 2 / span 8;
+    grid-column: 2 / span 12;
   }
   .ufo-sec .ufo-sec--content.align-box-left .ufo--basic-text-area,
   .ufo-sec .ufo-sec--content.align-box-left textarea {
