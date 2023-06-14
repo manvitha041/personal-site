@@ -2990,6 +2990,7 @@ figcaption {
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 34px;
+  font-family: "Libre Baskerville", serif;
 }
 .content-block {
   font-size: 0.6em;
@@ -4416,8 +4417,8 @@ h4 {
   }
 }
 
-.italiana {
-  font-family: Italiana, serif;
+.title-text {
+  font-family: "Libre Baskerville", serif;
 }
 
 .pill {
