@@ -2459,7 +2459,7 @@ a {
 }
 a,
 a:hover {
-  color: #007bff;
+  color: #03aeb2;
 }
 a:hover {
   text-decoration: none;
@@ -5561,7 +5561,10 @@ body {
 .ufo-sec--stat .stat-data {
   --bodyColor: #212121;
   --hoverColor: #212121;
-  text-align: center;
+}
+
+.ufo--column.stat-data * {
+  text-align: center !important;
 }
 .ufo-sec--stat .stat-data:first-child {
   padding-top: 0;
@@ -5574,7 +5577,7 @@ body {
   line-height: 1.4;
   margin-bottom: 5px;
   overflow-wrap: break-word;
-  text-align: center;
+  text-align: center !important;
   width: 100%;
 }
 .ufo-sec--stat .stat-data .number.default {
