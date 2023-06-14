@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700&family=Muli&&family=Mulish&family=Noto+Serif&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@400;800;900&family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&family=Work+Sans:wght@400;500&display=swap);
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2423,7 +2422,6 @@ section {
   display: block;
 }
 body {
-  background-color: var(--bgColor, #fff);
   color: #212529;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -2483,7 +2481,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 body {
-  color: #353738;
+  color: #212121;
   font-family: "Source Serif Pro", serif;
   font-size: 16px;
 }
@@ -2733,7 +2731,7 @@ body {
   color: var(--buttonColor);
 }
 .ufo--site-owner .info.dark {
-  --buttonColor: #353738;
+  --buttonColor: #212121;
 }
 .ufo--site-owner .picture {
   background: #edf1f1;
@@ -2798,7 +2796,7 @@ body {
   width: 52px;
 }
 .ufo--branding.dark {
-  --buttonColor: #353738;
+  --buttonColor: #212121;
 }
 .ufo--branding:active,
 .ufo--branding:hover {
@@ -4713,11 +4711,11 @@ body {
   --projectTitleFont: "Source Sans Pro", sans-serif;
   --projectSubTitFont: "PT Serif", serif;
   --ctaButtonFont: "Lato", sans-serif;
-  --h1Color: #353738;
-  --h2Color: #353738;
-  --h3Color: #353738;
-  --h4Color: #353738;
-  --p1Color: #353738;
+  --h1Color: #212121;
+  --h2Color: #212121;
+  --h3Color: #212121;
+  --h4Color: #212121;
+  --p1Color: #212121;
   --p2Color: #7b7e80;
   --projectTitleColor: #fff;
   --projectSubTitleColor: #fff;
@@ -5561,8 +5559,8 @@ body {
   }
 }
 .ufo-sec--stat .stat-data {
-  --bodyColor: #353738;
-  --hoverColor: #353738;
+  --bodyColor: #212121;
+  --hoverColor: #212121;
   text-align: center;
 }
 .ufo-sec--stat .stat-data:first-child {
@@ -5796,8 +5794,16 @@ body {
   max-width: 100%;
   padding: 0;
 }
-.image-gallery .ufo-grid-gallery .gallery-columns-3 .mockup--desktop .mockup-image,
-.image-gallery .ufo-grid-gallery .gallery-columns-4 .mockup--desktop .mockup-image {
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-3
+  .mockup--desktop
+  .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-4
+  .mockup--desktop
+  .mockup-image {
   background: transparent;
   border-radius: 0;
   padding: 0;
@@ -5818,20 +5824,44 @@ body {
   border-radius: 0;
   position: relative;
 }
-.image-gallery .ufo-grid-gallery .gallery-columns-3 .mockup--desktop .desktop-body,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-3
+  .mockup--desktop
+  .desktop-body,
 .image-gallery .ufo-grid-gallery .gallery-columns-3 .mockup--desktop:before,
-.image-gallery .ufo-grid-gallery .gallery-columns-4 .mockup--desktop .desktop-body,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-4
+  .mockup--desktop
+  .desktop-body,
 .image-gallery .ufo-grid-gallery .gallery-columns-4 .mockup--desktop:before {
   display: none;
 }
 .image-gallery .ufo-grid-gallery .gallery-columns-5 .mockup--mobile,
-.image-gallery .ufo-grid-gallery .gallery-columns-5 .mockup--mobile .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-5
+  .mockup--mobile
+  .mockup-image,
 .image-gallery .ufo-grid-gallery .gallery-columns-6 .mockup--mobile,
-.image-gallery .ufo-grid-gallery .gallery-columns-6 .mockup--mobile .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-6
+  .mockup--mobile
+  .mockup-image,
 .image-gallery .ufo-grid-gallery .gallery-columns-7 .mockup--mobile,
-.image-gallery .ufo-grid-gallery .gallery-columns-7 .mockup--mobile .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-7
+  .mockup--mobile
+  .mockup-image,
 .image-gallery .ufo-grid-gallery .gallery-columns-8 .mockup--mobile,
-.image-gallery .ufo-grid-gallery .gallery-columns-8 .mockup--mobile .mockup-image {
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-8
+  .mockup--mobile
+  .mockup-image {
   background: transparent;
   border-radius: 0;
   padding: 0;
@@ -5881,10 +5911,26 @@ body {
   border-radius: 0;
   padding: 0;
 }
-.image-gallery .ufo-grid-gallery .gallery-columns-5 .mockup--tablet .mockup-image,
-.image-gallery .ufo-grid-gallery .gallery-columns-6 .mockup--tablet .mockup-image,
-.image-gallery .ufo-grid-gallery .gallery-columns-7 .mockup--tablet .mockup-image,
-.image-gallery .ufo-grid-gallery .gallery-columns-8 .mockup--tablet .mockup-image {
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-5
+  .mockup--tablet
+  .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-6
+  .mockup--tablet
+  .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-7
+  .mockup--tablet
+  .mockup-image,
+.image-gallery
+  .ufo-grid-gallery
+  .gallery-columns-8
+  .mockup--tablet
+  .mockup-image {
   background: transparent;
   border-radius: 0;
   padding: 0;
@@ -6110,7 +6156,8 @@ body {
   left: 24px;
 }
 .image-gallery .carousel .carousel__arrows .carousel__arrow--left:before {
-  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50% no-repeat;
+  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50%
+    no-repeat;
   background-size: contain;
   content: "";
   height: 22px;
@@ -6124,7 +6171,8 @@ body {
   right: 24px;
 }
 .image-gallery .carousel .carousel__arrows .carousel__arrow--right:before {
-  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50% no-repeat;
+  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50%
+    no-repeat;
   background-size: contain;
   content: "";
   height: 22px;
@@ -6386,8 +6434,10 @@ body {
   .image-gallery.desktop-mockup [class*="gallery-columns-"] {
     grid-template-columns: repeat(1, 1fr);
   }
-  .image-gallery.ufo-grid-gallery[class*="mobile--"] [class*="gallery-columns-"],
-  .image-gallery.ufo-grid-gallery[class*="tablet--"] [class*="gallery-columns-"],
+  .image-gallery.ufo-grid-gallery[class*="mobile--"]
+    [class*="gallery-columns-"],
+  .image-gallery.ufo-grid-gallery[class*="tablet--"]
+    [class*="gallery-columns-"],
   .image-gallery.mobile-mockup [class*="gallery-columns-"],
   .image-gallery.tablet-mockup [class*="gallery-columns-"] {
     grid-template-columns: repeat(2, 1fr);
@@ -6459,9 +6509,21 @@ body {
     max-width: 100%;
     padding: 18px 4px;
   }
-  .image-gallery .ufo-grid-gallery .gallery-columns-5 .mockup--mobile .mockup-image,
-  .image-gallery .ufo-grid-gallery .gallery-columns-6 .mockup--mobile .mockup-image,
-  .image-gallery .ufo-grid-gallery .gallery-columns-7 .mockup--mobile .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-5
+    .mockup--mobile
+    .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-6
+    .mockup--mobile
+    .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-7
+    .mockup--mobile
+    .mockup-image,
   .image-gallery
     .ufo-grid-gallery
     .gallery-columns-8
@@ -6527,9 +6589,21 @@ body {
     border-radius: 10px;
     padding: 18px 4px;
   }
-  .image-gallery .ufo-grid-gallery .gallery-columns-5 .mockup--tablet .mockup-image,
-  .image-gallery .ufo-grid-gallery .gallery-columns-6 .mockup--tablet .mockup-image,
-  .image-gallery .ufo-grid-gallery .gallery-columns-7 .mockup--tablet .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-5
+    .mockup--tablet
+    .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-6
+    .mockup--tablet
+    .mockup-image,
+  .image-gallery
+    .ufo-grid-gallery
+    .gallery-columns-7
+    .mockup--tablet
+    .mockup-image,
   .image-gallery
     .ufo-grid-gallery
     .gallery-columns-8
@@ -7172,7 +7246,7 @@ body {
   direction: rtl;
 }
 .ufo-sec--navigation {
-  --checkedStepColor: #353738;
+  --checkedStepColor: #212121;
 }
 @media (min-width: 1024px) {
   .ufo-sec--navigation {
@@ -8098,7 +8172,8 @@ body {
   }
 }
 .ufo--slider-arrow-left:before {
-  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50% no-repeat;
+  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50%
+    no-repeat;
   background-size: contain;
   content: "";
   height: 22px;
@@ -8117,7 +8192,8 @@ body {
   }
 }
 .ufo--slider-arrow-right:before {
-  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50% no-repeat;
+  background: url(https://uxfol.io/dist/src/assets/images/icon-prev..svg) 50%
+    no-repeat;
   background-size: contain;
   content: "";
   height: 22px;
@@ -8219,7 +8295,7 @@ body {
   width: 100%;
 }
 .project-footer .owner .owner-name {
-  color: #353738;
+  color: #212121;
   font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -8563,7 +8639,8 @@ body {
   width: 32px;
 }
 .scroll-to-top:before {
-  background: url(https://uxfol.io/dist/src/assets/images/icon-left..svg) 50% no-repeat;
+  background: url(https://uxfol.io/dist/src/assets/images/icon-left..svg) 50%
+    no-repeat;
   background-size: 16px 16px;
   content: "";
   display: block;
