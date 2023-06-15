@@ -49,7 +49,6 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link href="./assets/main.css" rel="stylesheet" type="text/css" />
     <noscript>
       <style>
         #preloader,
@@ -62,190 +61,8 @@
         }
       </style>
     </noscript>
-    <link href="./assets/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/geofree.css" />
-    <link rel="stylesheet" href="./assets/geofree.theme.css" />
 
-    <style>
-      .ufo--case-study-container {
-        --h1Font: "Libre Baskerville", serif;
-        --h1Color: #282a2b;
-        --h1Weight: 900;
-        --h1Style: normal;
-
-        --h1Size: 42px;
-        --h1Height: 44px;
-
-        --h2Font: "Libre Baskerville", serif;
-        --h2Color: #282a2b;
-        --h2Weight: normal;
-        --h2Style: italic;
-
-        --h2Size: 28px;
-        --h2Height: 30px;
-
-        --h3Font: "Libre Baskerville", serif;
-        --h3Color: #282a2b;
-        --h3Weight: 800;
-        --h3Style: normal;
-
-        --h3Size: 21px;
-        --h3Height: 25px;
-
-        --h4Font: "Libre Baskerville", serif;
-        --h4Color: #282a2b;
-        --h4Weight: normal;
-        --h4Style: normal;
-
-        --h4Size: 17px;
-        --h4Height: 20px;
-
-        --p1Font: Raleway, sans-serif;
-        --p1Color: #949390;
-        --p1Weight: normal;
-        --p1Style: normal;
-
-        --p1Size: 16px;
-        --p1Height: 21px;
-
-        --p2Font: Raleway, sans-serif;
-        --p2Color: #949390;
-        --p2Weight: normal;
-        --p2Style: italic;
-
-        --p2Size: 16px;
-        --p2Height: 16px;
-
-        --projectTitleFont: "Libre Baskerville", serif;
-        --projectTitleColor: #ffffff;
-        --projectTitleWeight: 900;
-        --projectTitleStyle: normal;
-
-        --projectTitleSize: 32px;
-        --projectTitleHeight: 36px;
-
-        --projectSubTitleFont: "Libre Baskerville", serif;
-        --projectSubTitleColor: #ffffff;
-        --projectSubTitleWeight: bold;
-        --projectSubTitleStyle: normal;
-
-        --projectSubTitleSize: 20px;
-        --projectSubTitleHeight: 22px;
-
-        --buttonFont: "Libre Baskerville", serif;
-        --buttonColor: #ffffff;
-        --buttonWeight: 400;
-        --buttonStyle: normal;
-        --borderColor: #ffffff33;
-
-        --buttonSize: 16px;
-        --buttonHeight: 16px;
-      }
-
-      @media (min-width: 576px) {
-        .ufo--case-study-container {
-          --h3Size: 25px;
-          --h3Height: 28px;
-          --p1Size: 18px;
-          --p1Height: 21px;
-          --projectTitleSize: 48px;
-          --projectSubTitleSize: 22px;
-          --projectTitleHeight: 51px;
-          --projectSubTitleHeight: 25px;
-        }
-      }
-
-      @media (min-width: 768px) {
-        .ufo--case-study-container {
-          --h1Size: 60px;
-          --h1Height: 63px;
-          --h2Size: 40px;
-          --h2Height: 43px;
-          --h3Size: 30px;
-          --h3Height: 36px;
-          --h4Size: 24px;
-          --h4Height: 29px;
-          --p1Size: 18px;
-          --p1Height: 30px;
-          --p2Size: 16px;
-          --p2Height: 19px;
-          --projectTitleSize: 80px;
-          --projectTitleHeight: 89px;
-          --projectSubTitleSize: 28px;
-          --projectSubTitleHeight: 32px;
-          --buttonSize: 16px;
-          --buttonHeight: 19px;
-        }
-      }
-
-      .ufo-sec--header-main .ufo--site-owner .info,
-      .ufo-sec--header-main .ufo--branding {
-        --buttonColor: #ffffff;
-      }
-
-      .ufo-sec--header-main .ufo--hero-content-grid.has-image .text-container {
-        text-align: center;
-      }
-      .ufo-sec--header-main .text-container {
-        text-align: center;
-      }
-      @media (min-width: 768px) {
-      }
-      @media (min-width: 992px) {
-        .ufo-sec--header-main
-          .ufo--hero-content-grid.has-image
-          .text-container {
-          text-align: left;
-        }
-      }
-      @media (max-width: 1024px) {
-        .ufo-sec--header-main {
-          height: 35vh;
-          max-height: 200px;
-        }
-      }
-      .ufo--cta-btn-wr .btn--cta {
-        --ctaBgColor: #282a2b;
-        --ctaButtonSize: 14px;
-        --ctaButtonFont: Raleway, sans-serif;
-        --ctaButtonColor: #ffffff;
-        --ctaButtonHeight: 17px;
-        --ctaButtonWeight: 800;
-        --ctaButtonStyle: normal;
-      }
-    </style>
-    <style type="text/css">
-      .medium-zoom-overlay {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 0.3s;
-        will-change: opacity;
-      }
-      .medium-zoom--opened .medium-zoom-overlay {
-        cursor: pointer;
-        cursor: zoom-out;
-        opacity: 1;
-      }
-      .medium-zoom-image {
-        cursor: pointer;
-        cursor: zoom-in;
-        transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
-      }
-      .medium-zoom-image--hidden {
-        visibility: hidden;
-      }
-      .medium-zoom-image--opened {
-        position: relative;
-        cursor: pointer;
-        cursor: zoom-out;
-        will-change: transform;
-        z-index: 1000;
-      }
-    </style>
+    <link href="./dist/geofree.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav
@@ -1310,7 +1127,7 @@
                 src="https://www.youtube.com/embed/BM5CqZbFvSU"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 loading="lazy"
               ></iframe>
@@ -1329,7 +1146,7 @@
                 src="https://www.youtube.com/embed/fCaYR5K9UGA"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 loading="lazy"
               ></iframe>
@@ -1406,10 +1223,6 @@
       </div>
     </footer>
 
-    <script src="./assets/glide.js"></script>
-
-    <script src="./assets/geofree.js"></script>
-
-    <script type="text/javascript" src="./assets/main.js" async defer></script>
+    <script type="text/javascript" src="./dist/geofree.js" async defer></script>
   </body>
 </html>

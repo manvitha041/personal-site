@@ -4094,7 +4094,7 @@ body {
   background-color: #f8f8ff;
 }
 .navigation {
-  padding: 21px 72px;
+  padding: 24px;
 }
 .gradient-text {
   background: linear-gradient(45deg, #05abb0, #03cdac);
@@ -4186,23 +4186,23 @@ h4 {
 }
 
 .work-image.cc-work-1 {
-  background-image: url("./geo.png");
+  /* background-image: url("./geo.png"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
 .work-image.cc-work-2 {
-  background-image: url("./chef.png");
+  /* background-image: url("./chef.png"); */
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
 .work-image.cc-work-3 {
-  background-image: url("./kids.png");
+  /* background-image: url("./kids.png"); */
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
-.work-image.cc-work-4 {
+/* .work-image.cc-work-4 {
   background-image: url("./geo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -4216,7 +4216,7 @@ h4 {
   background-image: url("./geo.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 .contact {
   padding: 80px 80px 90px;
