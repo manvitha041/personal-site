@@ -63,14 +63,8 @@
       </style>
     </noscript>
     <link href="./assets/fonts.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="./assets/geofree/case-study-view-25a8acdd1f85bd7ca8cb2846e4829724.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/geofree/theme_eleven-51060fad7071e2962706fad4961d7617.css"
-    />
+    <link rel="stylesheet" href="./assets/geofree.css" />
+    <link rel="stylesheet" href="./assets/geofree.theme.css" />
 
     <style>
       .ufo--case-study-container {
@@ -536,17 +530,17 @@
                 </div>
                 <div class="nav-step">
                   <div class="nav-step-content">
-                    <a href="#section-54" class="step-link">
+                    <a href="#section-37" class="step-link">
                       <div class="step-number">4</div>
-                      <div class="step-name">Prototype</div>
+                      <div class="step-name">Test</div>
                     </a>
                   </div>
                 </div>
                 <div class="nav-step">
                   <div class="nav-step-content">
-                    <a href="#section-37" class="step-link">
+                    <a href="#section-54" class="step-link">
                       <div class="step-number">5</div>
-                      <div class="step-name">Test</div>
+                      <div class="step-name">Prototype</div>
                     </a>
                   </div>
                 </div>
@@ -1302,10 +1296,14 @@
 
         <div id="section-62" class="ufo-sec ufo-sec--textandmedia flipped-true">
           <div class="ufo-grid">
+            <!-- <div class="col-text col-order-1 media-video media-large"></div> -->
             <div
-              class="col-media col-order-2 media-video media-large embed-container"
+              class="col-text col-order-1 media-video media-large"
               style="padding-top: 0; padding-bottom: 0"
             >
+              <div class="text-container">
+                <h4>Give Away Item</h4>
+              </div>
               <iframe
                 width="315"
                 height="560"
@@ -1318,20 +1316,13 @@
               ></iframe>
             </div>
 
-            <div class="col-text col-order-1 media-video media-large">
-              <div class="text-container">
-                <h3>Give Away Item</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="section-63" class="ufo-sec ufo-sec--textandmedia flipped-true">
-          <div class="ufo-grid">
             <div
               class="col-media col-order-2 media-video media-large embed-container"
               style="padding-top: 0; padding-bottom: 0"
             >
+              <div class="text-container">
+                <h4>Take an Item</h4>
+              </div>
               <iframe
                 width="315"
                 height="560"
@@ -1342,12 +1333,6 @@
                 allowfullscreen
                 loading="lazy"
               ></iframe>
-            </div>
-
-            <div class="col-text col-order-1 media-video media-large">
-              <div class="text-container">
-                <h3>Take an Item</h3>
-              </div>
             </div>
           </div>
         </div>
@@ -1421,47 +1406,9 @@
       </div>
     </footer>
 
-    <script src="./assets/geofree/glide.js"></script>
+    <script src="./assets/glide.js"></script>
 
-    <script src="./assets/geofree/csv-dc0cb3429747bc7207ccd5868913d424.js"></script>
-    <script>
-      function navigateBack() {
-        var location = "/" + "f99bffd8";
-        window.location.href = window.location.origin + location;
-      }
-
-      function navigateToProjectFooter(projectShortId) {
-        window.location.href = "/p/f99bffd8" + "/" + projectShortId;
-      }
-
-      function navigateToProject(projectUrl) {
-        window.location.href = location.origin + projectUrl;
-      }
-
-      function navigateToPage(page) {
-        let location;
-        if (!!page) {
-          location = window.location.origin + "/" + "f99bffd8" + "/" + page;
-        } else {
-          location = window.location.origin + "/" + "f99bffd8";
-        }
-        window.location.href = location;
-      }
-
-      function ctaIntNavigation(page) {
-        let location;
-        if (!!page) {
-          if (page.slice(1, page.length) === "f99bffd8") {
-            location = window.location.origin + "/" + "f99bffd8";
-          } else {
-            location = window.location.origin + "/" + "f99bffd8" + page;
-          }
-        } else {
-          location = window.location.origin + "/" + "f99bffd8";
-        }
-        window.location.href = location;
-      }
-    </script>
+    <script src="./assets/geofree.js"></script>
 
     <script type="text/javascript" src="./assets/main.js" async defer></script>
   </body>
