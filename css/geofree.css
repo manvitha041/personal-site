@@ -2482,7 +2482,6 @@ html {
 }
 body {
   color: #212121;
-  font-family: "Source Serif Pro", serif;
   font-size: 16px;
 }
 .ufo--site-nav {
@@ -9886,4 +9885,80 @@ body {
 }
 .image-gallery.carousel .gallery-item[class*="--shadow"] {
   padding: 20px 0;
+}
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: flex;
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-family: var(--h1Font);
+  margin: 0px auto;
+  align-self: center;
+  width: 100%;
+}
+.blockquote h3 {
+  font-family: var(--buttonFont);
+  position: relative; /* for pseudos */
+  color: rgb(148, 147, 144);
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.75;
+  margin: 0;
+  border: 2px solid #fff;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 25px;
+}
+@media (max-width: 640px) {
+  .blockquote h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: 16px;
+  }
+}
+
+/* Blockquote right double quotes */
+.blockquote h3:after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(148, 147, 144);
+  border-radius: 0 50px 0 0;
+  width: 60px;
+  height: 60px;
+  bottom: -60px;
+  left: 50px;
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+
+.blockquote h3:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border: 6px solid #f8f8ff;
+  bottom: -3px;
+  left: 50px;
+  z-index: 2;
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+  position: relative;
+  color: rgb(148, 147, 144);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  z-index: 1;
+  margin-left: 150px;
+}
+
+.blockquote h4:first-letter {
+  margin-left: -12px;
 }
