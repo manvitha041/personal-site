@@ -3314,8 +3314,10 @@ figcaption {
     line-height: 56px;
   }
   .section {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 30px;
   }
   .section.examples {

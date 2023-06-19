@@ -7248,7 +7248,7 @@ body {
   direction: rtl;
 }
 .ufo-sec--navigation {
-  --checkedStepColor: #212121;
+  --checkedStepColor: #525252;
 }
 @media (min-width: 1024px) {
   .ufo-sec--navigation {
@@ -7290,7 +7290,6 @@ body {
   grid-column: 1/-1;
 }
 .ufo-sec--navigation .sticky-header .navigation-steps {
-  background-color: #fff;
   min-height: 48px;
   overflow: hidden;
   position: relative;
@@ -7298,7 +7297,6 @@ body {
 }
 @media (min-width: 768px) {
   .ufo-sec--navigation .sticky-header .navigation-steps {
-    background: #fff;
     height: 100%;
     min-height: auto;
     overflow: unset;
