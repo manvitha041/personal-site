@@ -2313,7 +2313,6 @@ figcaption {
   -ms-flex-align: stretch;
   align-items: stretch;
   background-color: #f4f4f4;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
@@ -2324,31 +2323,6 @@ figcaption {
 }
 .work-image:active {
   opacity: 0.7;
-}
-.work-image.cc-work-1 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c3344f66e092acbb772bee_GetA2B_Simple.webp");
-  background-size: cover;
-  background-attachment: scroll;
-}
-.work-image.cc-work-2 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c3365942f0a0010c9685f1_Jump_in_front_Simple.webp");
-  background-size: cover;
-}
-.work-image.cc-work-4 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c87924f422adc7abfaf8c9_Candidate%20Labs%20Cover%20Wide.webp");
-  background-size: cover;
-}
-.work-image.cc-work-3 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c336d8a8b08a79c309ab0f_Beeline_Simple_3.webp");
-  background-size: cover;
-}
-.work-image.cc-work-5 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c33851b456b0e98ce9c837_RealScape_Simple_2.webp");
-  background-size: cover;
-}
-.work-image.cc-work-6 {
-  background-image: url("https://uploads-ssl.webflow.com/5ce6c3f46e7a9b043daf061c/62c3388c12aa6b7e95d9c05c_Boujee_Simple_3.webp");
-  background-size: cover;
 }
 .project-name-link {
   margin-bottom: 5px;
@@ -4172,12 +4146,12 @@ h4 {
 }
 
 .work-image {
-  background-image: none;
   background-color: #04ab92;
   transition: all 0.25 ease-in-out;
 }
 .work-image .title {
   color: #f8f8ff;
+  position: relative;
 }
 
 .work-image:hover {
@@ -4188,37 +4162,19 @@ h4 {
 }
 
 .work-image.cc-work-1 {
-  /* background-image: url("./geo.png"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
 .work-image.cc-work-2 {
-  /* background-image: url("./chef.png"); */
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
 .work-image.cc-work-3 {
-  /* background-image: url("./kids.png"); */
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
-/* .work-image.cc-work-4 {
-  background-image: url("./geo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.work-image.cc-work-5 {
-  background-image: url("./geo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.work-image.cc-work-6 {
-  background-image: url("./geo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
 .contact {
   padding: 80px 80px 90px;
