@@ -4155,10 +4155,17 @@ h4 {
 }
 
 .work-image:hover {
-  opacity: 0.7;
+  opacity: 1;
+  .title-text {
+    display: none;
+  }
+}
+
+.work-image:hover:before {
+  background-color: transparent;
 }
 .work-image:active {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .work-image.cc-work-1 {

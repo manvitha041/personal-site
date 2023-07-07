@@ -5232,7 +5232,7 @@ body {
 }
 @media (min-width: 1024px) {
   .ufo-sec--header .text-container {
-    grid-column: 4 / span 8;
+    grid-column: 0 / span 8;
   }
 }
 .ufo-sec--header .text-container .ufo--basic-text-area {
