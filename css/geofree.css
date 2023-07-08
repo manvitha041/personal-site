@@ -4776,7 +4776,7 @@ body {
 }
 .ufo-sec .h1,
 .ufo-sec h1 {
-  color: var(--h1Color);
+  color: #00b2b0;
   font-family: var(--h1Font);
   font-size: var(--h1Size);
   font-style: var(--h1Style);
