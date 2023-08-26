@@ -4758,20 +4758,14 @@ body {
   --hoverColor: #00b8ff;
 }
 .ufo-sec {
-  padding-bottom: var(--paddingBottom, 30px);
-  padding-top: var(--paddingTop, 30px);
+  padding-bottom: var(--paddingBottom, 24px);
+  padding-top: var(--paddingTop, 24px);
   position: relative;
 }
 @media (min-width: 1024px) {
   .ufo-sec {
-    padding-bottom: var(--paddingBottom, 40px);
-    padding-top: var(--paddingTop, 40px);
-  }
-}
-@media (min-width: 1280px) {
-  .ufo-sec {
-    padding-bottom: var(--paddingBottom, 50px);
-    padding-top: var(--paddingTop, 50px);
+    padding-bottom: var(--paddingBottom, 32px);
+    padding-top: var(--paddingTop, 32px);
   }
 }
 .ufo-sec .h1,

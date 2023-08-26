@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>CKoB Web-App by Manvitha Konkimalla</title>
+    <meta
+      content="Creative Kids of Berlin is a platform dedicated to providing art and discovery workshops for children and young people aged 5 to 17."
+      name="description"
+    />
+    <meta
+      content="Creative Kids of Berlin App by Manvitha Konkimalla"
+      property="og:title"
+    />
+    <meta
+      content="Creative Kids of Berlin is a platform dedicated to providing art and discovery workshops for children and young people aged 5 to 17."
+      property="og:description"
+    />
+    <meta
+      content="Creative Kids of Berlin App by Manvitha Konkimalla"
+      property="twitter:title"
+    />
+    <meta
+      content="Creative Kids of Berlin is a platform dedicated to providing art and discovery workshops for children and young people aged 5 to 17."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://manvitha-konkimalla.com/assets/logo.webp"
+      property="twitter:image"
+    />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <noscript>
+      <style>
+        #preloader,
+        .menu-button.w-nav-button {
+          display: none !important;
+        }
+
+        .navigation-items {
+          display: flex !important;
+        }
+      </style>
+    </noscript>
+
+    <link href="./dist/geofree.css" rel="stylesheet" type="text/css" />
+    <style>
+      .grid {
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navigation w-nav shadow"
+    >
+      <a
+        aria-label="Manvitha Konkimalla - Portfolio"
+        class="logo-hyperlink"
+        href="https://www.manvitha-konkimalla.com/"
+      >
+        <img
+          src="./assets/logo.webp"
+          width="88"
+          height="36"
+          class="logo"
+          alt="personal website logo"
+        />
+      </a>
+      <div class="navigation-items">
+        <a
+          aria-label="Manvitha Konkimalla - Portfolio"
+          href="https://www.manvitha-konkimalla.com/"
+          aria-current="page"
+          class="logo-link w-nav-brand w--current"
+          aria-label="home"
+        ></a>
+        <div class="navigation-wrap">
+          <nav role="navigation" class="navigation-items w-nav-menu">
+            <a
+              aria-label="home"
+              href="https://www.manvitha-konkimalla.com#work"
+              aria-current="page"
+              class="navigation-item w-nav-link w--current"
+              title="Latest projects"
+              >Projects</a
+            >
+            <a
+              aria-label="about"
+              href="https://www.manvitha-konkimalla.com/about"
+              class="navigation-item w-nav-link"
+              title="A little bit about me"
+              >About</a
+            >
+            <a
+              aria-label="contact"
+              href="https://www.manvitha-konkimalla.com#Contact"
+              class="navigation-item w-nav-link"
+              >Contact</a
+            >
+            <a
+              aria-label="resume"
+              href="./Manvitha-Konkimalla-Resume.pdf"
+              target="_blank"
+              class="navigation-item w-nav-link"
+              >Resume</a
+            >
+          </nav>
+          <div
+            class="menu-button w-nav-button"
+            style="-webkit-user-select: text"
+            aria-label="menu"
+            role="button"
+            tabindex="0"
+            aria-controls="w-nav-overlay-0"
+            aria-haspopup="menu"
+            aria-expanded="false"
+          >
+            <img
+              src="./assets/menu-icon.png"
+              width="22"
+              height="22"
+              alt="menu icon"
+              class="menu-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-nav-overlay" style="height: 100vh">
+        <nav
+          role="navigation"
+          class="navigation-items w-nav-menu"
+          data-nav-menu-open=""
+          style="
+            transform: translateY(0px);
+            transition: transform 400ms ease 0s;
+          "
+        >
+          <a
+            aria-label="home"
+            href="#work"
+            aria-current="page"
+            class="navigation-item w-nav-link w--nav-link-open"
+            title="Latest projects"
+            >Projects</a
+          >
+          <a
+            aria-label="about"
+            href="https://www.manvitha-konkimalla.com/about"
+            class="navigation-item w-nav-link w--nav-link-open w--current"
+            title="A little bit about me"
+            >About</a
+          >
+          <a
+            aria-label="contact"
+            href="#Contact"
+            class="navigation-item w-nav-link w--nav-link-open"
+            >Contact</a
+          >
+          <a
+            aria-label="resume"
+            href="./Manvitha-Konkimalla-Resume.pdf"
+            target="_blank"
+            class="navigation-item w-nav-link w--nav-link-open"
+            >Resume</a
+          >
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div class="ufo--case-study-container project">
+        <div
+          id="section-1"
+          class="ufo-sec ufo-sec--media image"
+          style="padding: 0px"
+        >
+          <div id="section-0" class="ufo-sec ufo-sec--header-main">
+            <div
+              class="ufo-sec--bg"
+              style="
+                background-image: url(https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/4OpBNgLhWzGxTbrL.png);
+              "
+            ></div>
+
+            <div class="ufo-grid ufo--hero-content-grid"></div>
+          </div>
+        </div>
+
+        <div id="section-2" class="ufo-sec ufo-sec--columns">
+          <div class="ufo-grid ufo--columns ufo--columns-4">
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4>
+                  <strong>My Role</strong>
+                </h4>
+                <p>UI/UX designer</p>
+              </div>
+            </div>
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4><strong>Duration</strong></h4>
+                <p>2 months</p>
+              </div>
+            </div>
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4><strong>Tools</strong></h4>
+                <p>Figma, Miro, Canva</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-3" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Overview</h3>
+                <p>
+                  During the Redi School design program, I completed an
+                  individual project where I redesigned a workshop website. The
+                  project lasted 2 months, and I dedicated my efforts to solving
+                  the design challenges and creating an improved user experience
+                  for the website.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-4" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>About</h3>
+                <p>
+                  Creative Kids of Berlin is a platform dedicated to providing
+                  art and discovery workshops for children and young people aged
+                  5 to 17. They aim to nurture creativity, imagination, and
+                  artistic skills through engaging and educational
+                  experiences.<br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-7" class="ufo-sec ufo-sec--textandmedia flipped-true">
+          <div class="grid" style="display: grid">
+            <div
+              class="col-media col-order-2 media-image media-small"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-container">
+                <div class="media-box">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/k5e7rUQoKK9TuM37.png"
+                      data-zoom=""
+                      alt="Redesign of Creative kids of Berlin"
+                      width="542"
+                      height="226"
+                      class="medium-zoom-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-text col-order-1 media-image media-small">
+              <div class="text-container">
+                <h3><strong>Market Research:</strong></h3>
+                <p>
+                  The initial step involved thorough market research, focusing
+                  on various workshop providers in Berlin. The study aimed to
+                  understand the landscape and offerings. Notable observations
+                  include:
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      A diverse range of workshop providers catering to
+                      children's creative activities.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      An array of workshop themes and subjects leads to
+                      potential difficulties in decision-making for parents and
+                      young participants.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Limited emphasis on customizability, with options to
+                      tailor workshops according to individual preferences being
+                      less common.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-9" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3><strong>User Research:</strong></h3>
+                <p>
+                  Following the market research, an in-depth exploration of user
+                  behavior and preferences was conducted. The objective was to
+                  uncover how parents and young adults find and select
+                  workshops. The research process involved qualitative user
+                  interviews, aiming to identify users' needs and pain points,
+                  accelerating the workshop selection process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-11" class="ufo-sec ufo-sec--textandmedia flipped-true">
+          <div class="grid" style="display: grid">
+            <div class="col-text col-order-1 media-image media-medium">
+              <div class="text-container align-text-left">
+                <h3>User Interviews</h3>
+                <p>
+                  I conducted insightful interviews with 8 individuals remotely
+                  who expressed keen interest in workshops for themselves or
+                  their children. These user interview findings provided an
+                  ongoing reference point that greatly influenced my design
+                  journey. Here's a summary of the key revelations drawn from
+                  these conversations:<br /><br /><strong
+                    >Some of the main insights were:</strong
+                  >
+                </p>
+                <p>
+                  "Upon my initial visit to the website, I was quite puzzled by
+                  the homepage layout, finding it somewhat disorienting."
+                </p>
+                <p>
+                  "I was taken aback to discover that the registration process
+                  solely involved paper forms, which struck me as outdated and
+                  rather inconvenient."
+                </p>
+                <p>
+                  "I encountered difficulties in locating comprehensive details
+                  regarding workshop options, schedules, and availability. This
+                  lack of clarity made decision-making for my children's
+                  involvement challenging."
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-media col-order-2 media-image media-medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-container">
+                <div class="media-box">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/6NPKYzcrfPbyYtGh.png"
+                      data-zoom=""
+                      alt="Redesign of Creative kids of Berlin"
+                      width="1539"
+                      height="1032"
+                      class="medium-zoom-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-13" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3><strong>User Persona &amp; User Journey</strong></h3>
+                <p>
+                  To gain a deeper understanding of the user's needs and
+                  preferences, I developed a comprehensive user persona and
+                  mapped out their journey. This allowed me to identify their
+                  pain points and uncover potential opportunities for
+                  improvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-14" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--large"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/tvGF2oadeZ5CxYcZ.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="832"
+                    height="625"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-15" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/2wXmNuSvFPJb8cgP.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="1679"
+                    height="1297"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-16" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Problem statement</h3>
+                <p>
+                  <br />"Parents seeking engaging and enriching workshops for
+                  their children face challenges in inputting their preferences
+                  and accessing online registration, resulting in a cumbersome
+                  and inefficient user experience."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-17" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Solution</h3>
+                <p>
+                  <br />The solution is to create a visually appealing and
+                  user-friendly website that offers online registration and
+                  provides clear information about workshops. By enhancing user
+                  engagement and accessibility through intuitive design and
+                  seamless navigation, the website will empower parents to
+                  easily explore, select, and register for workshops that meet
+                  their children's needs and interests.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-18" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>User flow</h3>
+                <p>
+                  Based on the key objectives of persona, I created a user flow
+                  that allows users to navigate through the website to
+                  accomplish their goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-19" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--large"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/27XyRpPtWSQK0oaH.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="2002"
+                    height="1360"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-20" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3><strong>&nbsp;Site Map</strong></h3>
+                <p class="">
+                  I created a concise sitemap consisting of four main pages:
+                  Home, Workshops, About, and Contact form. This intuitive
+                  structure enables users to easily navigate and locate the
+                  information they need within the website.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-21" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--large"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/BPPpk4VY1tH7snlY.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="1910"
+                    height="1220"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-22" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Wireframes</h3>
+                <p class="">
+                  I have created low-fidelity wireframes based on initial ideas
+                  and details. When the structure of content and functionality
+                  was in place, I moved on to the mid-fidelity Wireframes
+                  followed by high-fidelity wireframes.
+                </p>
+                <p>
+                  After ideating and generating multiple concept sketches, I
+                  proceeded to develop low-fidelity wireframes to further refine
+                  the design. These wireframes provided a Basic structure for
+                  the content and functionality. Then, I progressed to
+                  mid-fidelity wireframes, adding more details and elements.
+                  Finally, I created high-fidelity wireframes to capture the
+                  final visual design and user interface of the Project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-23" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--large"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/sAflNRYtEwv7s5TE.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="11429"
+                    height="5905"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+              <div class="caption-box">
+                <div class="media-caption">
+                  <div class="text">
+                    <p><strong>Home Page</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-24" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h1><strong>Re-Design</strong></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-26" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4><strong>Before/After - Home Page</strong></h4>
+                <p>
+                  Before the redesign, the homepage was perplexing and lacked a
+                  clear starting point. After the redesign, it presents a
+                  concise format that highlights the website's purpose and the
+                  variety of workshops offered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-27" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--large"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/VbJFLHKNnobblNzR.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="6908"
+                    height="4540"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-29" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4><strong>Before/After - Workshop Page</strong></h4>
+                <p>
+                  Previously, the workshop page only displayed weekly workshops,
+                  while vacation and parent-child workshops were on separate
+                  pages. In the redesign, I unified all workshops onto a single
+                  page. This enhancement simplifies the user experience,
+                  allowing visitors to easily explore and choose from various
+                  workshop options, thus facilitating informed selections.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-30" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/RuL4gv3nTvgZFa2Q.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="6908"
+                    height="7794"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-32" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4><strong>Before/After - Registration Page</strong></h4>
+                <p>
+                  Recognizing the limitation of relying solely on paper-based
+                  registration forms and the absence of an online option, I
+                  implemented an online registration form. This deliberate
+                  enhancement was designed to maximize convenience and
+                  effectively address the identified user concern.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-33" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/m24fMCdwsp2jUWEf.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="6908"
+                    height="4209"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-36" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4><strong>Before/After - About Page</strong></h4>
+                <p>
+                  I integrated their concept and "About" information into a
+                  single page, facilitating a comprehensive understanding of
+                  their design philosophy, ideology, and founding journey for
+                  users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-38" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/LOeG9KBDBTx5LoL4.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="6908"
+                    height="4945"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-40" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4><strong>Before/After - Contact Page</strong></h4>
+                <p>
+                  I modified the contact form and incorporated their Instagram
+                  profile, aiming to expand their online presence and enhance
+                  visibility. This adjustment increases the potential for
+                  attracting attention and facilitating workshop bookings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-41" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/3AZc7C0ichsPs8gS.png"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="6908"
+                    height="4945"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-42" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Usability Testing</h3>
+                <p>
+                  After redesigning the Creative Kids of Berlin website, a
+                  usability testing phase was conducted to assess the
+                  effectiveness of the changes made and gather feedback from
+                  users. The objective was to ensure that the redesigned website
+                  addressed the usability issues identified earlier and provided
+                  an improved user experience.
+                </p>
+                <p>
+                  Six participants, representing both parents seeking children's
+                  workshops and creative-minded young adults, were selected for
+                  the moderated remote usability test. They were given tasks to
+                  evaluate the website's effectiveness:
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      Choose and register for a summer workshop suitable for an
+                      8-year-old.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Find additional details about a specific workshop and
+                      explore contact options.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Reserve a weekly workshop on a Thursday, conducted in
+                      German, catering to a 12-year-old's interests.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-43" class="ufo-sec ufo-sec--stat">
+          <div class="grid">
+            <div class="ufo--columns-wrapper">
+              <div class="ufo--columns statistics-columns ufo--columns-4">
+                <div class="ufo--column stat-data">
+                  <div class="number h2" style="font-size: 80px">6</div>
+                  <div class="unit h4" style="font-size: 30px">
+                    participants
+                  </div>
+                </div>
+                <div class="ufo--column stat-data">
+                  <div class="number h2" style="font-size: 80px">28-40</div>
+                  <div class="unit h4" style="font-size: 30px">Age range</div>
+                </div>
+                <div class="ufo--column stat-data">
+                  <div class="number h2" style="font-size: 80px">3</div>
+                  <div class="unit h4" style="font-size: 30px">Tasks</div>
+                </div>
+                <div class="ufo--column stat-data">
+                  <div class="number h2" style="font-size: 80px">20</div>
+                  <div class="unit h4" style="font-size: 30px">Mins each</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-45" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Test Results</h3>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Improved Navigation</strong>: Participants found
+                      workshops more easily due to enhanced labels and
+                      categories.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Streamlined Registration</strong>: The
+                      user-friendly online registration system simplified the
+                      process.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Enhanced Information</strong>: Detailed workshop
+                      information, including schedules and pricing, was
+                      appreciated.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Favorable Visual Design</strong>: The visually
+                      engaging design received positive feedback.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Efficient Online Interaction</strong>: Online
+                      registration and payment options were well-received for
+                      their convenience.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-46" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Style Guide</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-47" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="https://storage.googleapis.com/uxfolio/643448bba6c4a9000294e56e/64344aeea6c4a9000294e584/CokHn3NbJpTeEB0t.jpg"
+                    data-zoom=""
+                    alt="Redesign of Creative kids of Berlin"
+                    width="4649"
+                    height="4932"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-48" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3><strong>Prototype</strong></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-49" class="ufo-sec ufo-sec--media image">
+          <div class="grid">
+            <div
+              class="media-container display-mode--default embed-container"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box embed-content">
+                <div class="embed embed-type-video noHeightValue">
+                  <iframe
+                    src="https://www.youtube.com/embed/d_utpBKF378?autoplay=0&amp;mute=0&amp;loop=0"
+                    loading="lazy"
+                    allowfullscreen="false"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-51" class="ufo-sec ufo-sec--text">
+          <div class="grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Summary</h3>
+                <p>
+                  The Creative Kids website redesign has been an enriching
+                  journey that honed my skills in user-centered design and
+                  problem-solving. By delving into user research and conducting
+                  insightful interviews, I gained invaluable insights into user
+                  preferences. The iterative design process, coupled with user
+                  feedback, played a pivotal role in shaping the outcome.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-wrap">
+      <div class="footer-links">
+        <a
+          aria-label="Manvitha Konkimalla - Linkedin"
+          class="ld footer-item"
+          href="https://www.linkedin.com/in/manvitha-konkimalla/"
+          target="_blank"
+          ><img
+            src="./assets/linkedin.png"
+            alt="linkedin"
+            width="24px"
+            height="24px"
+        /></a>
+        <a
+          aria-label="Manvitha Konkimalla - Dribbble"
+          class="db footer-item"
+          href="https://dribbble.com/manvitha041"
+          target="_blank"
+          ><img
+            src="./assets/dribble.png"
+            alt="Dribbble"
+            width="24px"
+            height="24px"
+        /></a>
+        <a
+          aria-label="Manvitha Konkimalla - Behance"
+          class="be footer-item"
+          href="mailto:manvitha.konkimalla@gmail.com"
+          title="manvitha.konkimalla@gmail.com"
+          target="_blank"
+          ><img
+            src="./assets/email.png"
+            alt="email"
+            width="36px"
+            height="36px"
+          />
+        </a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-item">© Manvitha Konkimalla 2023</span>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./dist/geofree.js" async defer></script>
+  </body>
+</html>
