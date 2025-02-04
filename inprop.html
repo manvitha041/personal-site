@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>InProp Web-App by Manvitha Konkimalla</title>
+    <meta
+      content="An AI-powered platform simplifying property management with organized data and smart insights for better decisions."
+      name="description"
+    />
+    <meta content="InProp App by Manvitha Konkimalla" property="og:title" />
+    <meta
+      content="An AI-powered platform simplifying property management with organized data and smart insights for better decisions."
+      property="og:description"
+    />
+    <meta
+      content="InProp App by Manvitha Konkimalla"
+      property="twitter:title"
+    />
+    <meta
+      content="An AI-powered platform simplifying property management with organized data and smart insights for better decisions."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://manvitha-konkimalla.com/assets/logo.webp"
+      property="twitter:image"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <noscript>
+      <style>
+        #preloader,
+        .menu-button.w-nav-button {
+          display: none !important;
+        }
+        .navigation-items {
+          display: flex !important;
+        }
+      </style>
+    </noscript>
+    <link href="./dist/geofree.css" rel="stylesheet" type="text/css" />
+    <style>
+      .grid {
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navigation w-nav shadow"
+    >
+      <a
+        aria-label="Manvitha Konkimalla - Portfolio"
+        class="logo-hyperlink"
+        href="https://www.manvitha-konkimalla.com/"
+      >
+        <img
+          src="./assets/logo.webp"
+          width="88"
+          height="36"
+          class="logo"
+          alt="personal website logo"
+        />
+      </a>
+      <div class="navigation-items">
+        <a
+          aria-label="Manvitha Konkimalla - Portfolio"
+          href="https://www.manvitha-konkimalla.com/"
+          aria-current="page"
+          class="logo-link w-nav-brand w--current"
+          aria-label="home"
+        ></a>
+        <div class="navigation-wrap">
+          <nav role="navigation" class="navigation-items w-nav-menu">
+            <a
+              aria-label="home"
+              href="https://www.manvitha-konkimalla.com#work"
+              aria-current="page"
+              class="navigation-item w-nav-link w--current"
+              title="Latest projects"
+              >Projects</a
+            >
+            <a
+              aria-label="about"
+              href="https://www.manvitha-konkimalla.com/about"
+              class="navigation-item w-nav-link"
+              title="A little bit about me"
+              >About</a
+            >
+            <a
+              aria-label="contact"
+              href="https://www.manvitha-konkimalla.com#Contact"
+              class="navigation-item w-nav-link"
+              >Contact</a
+            >
+            <a
+              aria-label="resume"
+              href="./Manvitha-Konkimalla-Resume.pdf"
+              target="_blank"
+              class="navigation-item w-nav-link"
+              >Resume</a
+            >
+          </nav>
+          <div
+            class="menu-button w-nav-button"
+            style="-webkit-user-select: text"
+            aria-label="menu"
+            role="button"
+            tabindex="0"
+            aria-controls="w-nav-overlay-0"
+            aria-haspopup="menu"
+            aria-expanded="false"
+          >
+            <img
+              src="./assets/menu-icon.png"
+              width="22"
+              height="22"
+              alt="menu icon"
+              class="menu-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-nav-overlay" style="height: 100vh">
+        <nav
+          role="navigation"
+          class="navigation-items w-nav-menu"
+          data-nav-menu-open=""
+          style="
+            transform: translateY(0px);
+            transition: transform 400ms ease 0s;
+          "
+        >
+          <a
+            aria-label="home"
+            href="#work"
+            aria-current="page"
+            class="navigation-item w-nav-link w--nav-link-open"
+            title="Latest projects"
+            >Projects</a
+          >
+          <a
+            aria-label="about"
+            href="https://www.manvitha-konkimalla.com/about"
+            class="navigation-item w-nav-link w--nav-link-open w--current"
+            title="A little bit about me"
+            >About</a
+          >
+          <a
+            aria-label="contact"
+            href="#Contact"
+            class="navigation-item w-nav-link w--nav-link-open"
+            >Contact</a
+          >
+          <a
+            aria-label="resume"
+            href="./Manvitha-Konkimalla-Resume.pdf"
+            target="_blank"
+            class="navigation-item w-nav-link w--nav-link-open"
+            >Resume</a
+          >
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div class="ufo--case-study-container project">
+        <div id="section-0" class="ufo-sec ufo-sec--header-main">
+          <div
+            class="ufo-sec--bg"
+            style="background-image: url(assets/inprop/9ofXEneo1VIvYlSS.png)"
+          ></div>
+          <div class="ufo-grid ufo--hero-content-grid"></div>
+        </div>
+        <div id="section-2" class="ufo-sec ufo-sec--columns">
+          <div class="ufo-grid ufo--columns ufo--columns-3">
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4>
+                  <strong>My Role</strong>
+                </h4>
+                <p>Product Designer</p>
+              </div>
+            </div>
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4><strong>Duration</strong></h4>
+                <p>May - September 2024</p>
+              </div>
+            </div>
+            <div class="ufo--column">
+              <div class="text-container align-text-left">
+                <h4><strong>Tools</strong></h4>
+                <p>Adobe Photoshop, Figma, Miro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-3" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>My Contributions</h3>
+                <p>
+                  As the sole designer, I developed the logo, brand identity,
+                  and color palette for consistency across the platform. I also
+                  designed a user-friendly interface, created wireframes,
+                  prototypes, and a design system. Throughout, I collaborated
+                  closely with developers and stakeholders to ensure seamless
+                  execution.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Design Challenge</h3>
+                <p>
+                  The challenge was to turn stacks of paper-based property
+                  documents into a simple and easy-to-use digital platform. The
+                  design had to present AI-driven data in a clear way, helping
+                  homeowners and property managers access information quickly,
+                  reduce costs, improve sustainability, and make better
+                  decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-4" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>User Research & Insights</h3>
+
+                <p>
+                  <span class="h4">Understanding the Problem</span><br />
+                  To create an effective solution, it was essential to first
+                  understand the challenges property managers and homeowners
+                  face. This phase involved gathering insights to inform our
+                  design and ensure the product would meet real needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h4>Key Research Methods</h4>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Stakeholder Interviews</strong><br />Engaged with
+                      property managers, asset managers, and homeowners to
+                      understand their frustrations with current workflows.
+                      Through these interviews, common pain points emerged, such
+                      as the inefficiency of paper-based systems and lack of
+                      integrated data.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Competitive Analysis</strong><br />Reviewed
+                      competitors' platforms to identify features that worked
+                      well, as well as gaps where InProp could offer a more
+                      streamlined, user-friendly experience.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>User Research</strong><br />Conducted user
+                      research into current property management workflows to
+                      better understand the complexity of managing and
+                      organizing building documentation. The research revealed
+                      that many tasks were slow, error-prone, and unnecessarily
+                      time-consuming.
+                    </p>
+                  </li>
+                </ul>
+                <h4>Main Pain Points</h4>
+                <ul>
+                  <li>
+                    <p>
+                      Paper-based systems are inefficient and lead to slow
+                      processes, often resulting in errors.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      There is no central system to connect data across
+                      different documents, causing disorganization and making
+                      data hard to access.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The lack of real-time updates and comprehensive data
+                      impacts property valuation accuracy and sustainability
+                      decisions
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-12" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Wireframing & UI Design</h3>
+                <p>
+                  After analyzing the research findings, I designed wireframes
+                  to map out the platform’s structure, flow, and key features,
+                  ensuring a seamless user experience. Through several
+                  iterations, I refined the design into the final UI screens<br /><br />Based
+                  on research insights, I designed wireframes to define the
+                  platform's structure, flow, and features. Through multiple
+                  iterations, I refined the UI screens, ensuring a smooth and
+                  intuitive user experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="section-12-1"
+          class="ufo-sec ufo-sec--media image"
+          style="padding-top: 0; padding-bottom: 0"
+        >
+          <div class="grid" style="margin: 0px">
+            <div
+              class="media-container display-mode--medium"
+              style="
+                padding-top: 0;
+                padding-bottom: 0;
+                width: 100%;
+                min-width: 100vw;
+              "
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="./assets/inprop/gallery.png"
+                    data-zoom=""
+                    alt="inprop"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+              <div class="caption-box">
+                <div class="media-caption">
+                  <div class="text">
+                    <p>Some high-fidelity Wireframes screens</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-13" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Usability Testing</h3>
+                <p>
+                  Conducted testing with the target audience to gather feedback
+                  on key features and functionality. Based on their input, made
+                  minor adjustments to improve the user experience, ensuring the
+                  platform was intuitive and aligned with user needs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="section-13-1"
+          class="ufo-sec ufo-sec--textandmedia flipped-true"
+        >
+          <div class="ufo-grid">
+            <div
+              class="col-media col-order-2 media-image media-medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-container">
+                <div class="media-box">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      src="./assets/inprop/uBnY7SZEqE02W7Jz.webp"
+                      data-zoom=""
+                      alt="inprop"
+                      class="medium-zoom-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-text col-order-1 media-image media-medium">
+              <div class="text-container">
+                <h3>Logo & Brand Identity Design</h3>
+                <p>
+                  Building on research insights, I developed several logo
+                  concepts for InProp. The final design combines property and
+                  technology in a clean, modern style. The "I" is shaped like a
+                  building, symbolizing the properties managed, while the "N"
+                  represents the flow of data. The windows in the logo reflect
+                  transparency, activity, and the dynamic nature of properties.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="section-13-2"
+          class="ufo-sec ufo-sec--textandmedia flipped-true"
+        >
+          <div class="ufo-grid">
+            <div
+              class="col-media col-order-1 media-image media-medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-container">
+                <div class="media-box">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      src="./assets/inprop/48hD2fv8gs9T2nye.webp"
+                      data-zoom=""
+                      alt="inprop"
+                      class="medium-zoom-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-text col-order-2 media-image media-medium">
+              <div class="text-container">
+                <h3>Visual Style Guide</h3>
+                <p>
+                  A cohesive color palette was designed to reflect InProp's
+                  values of trust, innovation, and growth. Deep lavender
+                  symbolizes trust, while soft green adds a modern touch.
+                  Poppins for headings and Roboto for body text ensure a
+                  friendly, professional, and user-friendly design
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-17" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Landing Page Design</h3>
+                <p>
+                  I designed the landing page to highlight InProp's key
+                  features, using clear text and easy navigation to provide a
+                  smooth, user-friendly experience that encourages user
+                  engagement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-19" class="ufo-sec ufo-sec--media image">
+          <div class="ufo-grid">
+            <div
+              class="media-container display-mode--medium"
+              style="padding-top: 0; padding-bottom: 0"
+            >
+              <div class="media-box">
+                <div class="image">
+                  <img
+                    loading="lazy"
+                    src="./assets/inprop/landing.png"
+                    data-zoom=""
+                    alt="inprop"
+                    class="medium-zoom-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-20" class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Learnings</h3>
+                <p>
+                  I gained valuable insights into creating a brand identity from
+                  scratch that aligns with the company’s values and resonates
+                  with the audience. By simplifying complex data and gathering
+                  user feedback, I designed a user-friendly platform that
+                  provided clearer insights, resulting in a cost-effective
+                  solution that enhanced decision-making and sustainability
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ufo-sec ufo-sec--text">
+          <div class="ufo-grid">
+            <div class="ufo-sec--content align-box-left">
+              <div class="text-container">
+                <h3>Contact me here if you want to collaborate</h3>
+                <h4>
+                  <a
+                    style="color: #04ab92"
+                    href="mailto:manvitha.konkimalla@gmail.com"
+                    >manvitha.konkimalla@gmail.com</a
+                  >
+                </h4>
+              </div>
+              <div class="button-container left"></div>
+              <div class="separator">
+                <div class="line weight-light"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top nav-on visible"></div>
+    </main>
+    <footer class="footer-wrap">
+      <div class="footer-links">
+        <a
+          aria-label="Manvitha Konkimalla - Linkedin"
+          class="ld footer-item"
+          href="https://www.linkedin.com/in/manvitha-k/"
+          target="_blank"
+          ><img
+            src="./assets/linkedin.png"
+            alt="linkedin"
+            width="24px"
+            height="24px"
+        /></a>
+        <a
+          aria-label="Manvitha Konkimalla - Dribbble"
+          class="db footer-item"
+          href="https://dribbble.com/manvitha041"
+          target="_blank"
+          ><img
+            src="./assets/dribble.png"
+            alt="Dribbble"
+            width="24px"
+            height="24px"
+        /></a>
+        <a
+          aria-label="Manvitha Konkimalla - Behance"
+          class="be footer-item"
+          href="mailto:manvitha.konkimalla@gmail.com"
+          title="manvitha.konkimalla@gmail.com"
+          target="_blank"
+          ><img
+            src="./assets/email.png"
+            alt="email"
+            width="36px"
+            height="36px"
+          />
+        </a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-item">© Manvitha Konkimalla 2023</span>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./dist/geofree.js" async defer></script>
+  </body>
+</html>
